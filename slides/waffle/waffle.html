@@ -1,0 +1,40 @@
+<section class="slide" data-slide-type="waffle">
+    <div class="slide-left slide-left--waffle">
+        <div class="slide-header">{{> slide-header}}</div>
+        <div class="waffle__legend">
+            {{#each segments}}
+            <div
+                class="waffle__legend-item"
+                style="--item-color: {{itemColor}}; --legend-delay: {{legendDelay}}ms;"
+            >
+                <div class="waffle__legend-swatch"></div>
+                <div class="waffle__legend-text">
+                    <h3 class="waffle__legend-title">{{value}}</h3>
+                    <p class="waffle__legend-description">{{label}}</p>
+                </div>
+            </div>
+            {{/each}} {{#if emptyLabel}}
+            <div
+                class="waffle__legend-item"
+                style="--legend-delay: {{emptyLabelDelay}}ms;"
+            >
+                <div
+                    class="waffle__legend-swatch waffle__legend-swatch--empty"
+                ></div>
+                <div class="waffle__legend-text">
+                    <h3 class="waffle__legend-title">{{emptyValue}}</h3>
+                    <p class="waffle__legend-description">{{emptyLabel}}</p>
+                </div>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+    <div class="waffle__grid">
+        {{#each cells}}
+        <div
+            class="waffle__cell{{#if color}} waffle__cell--filled{{/if}}"
+            style="{{#if color}}--cell-delay: {{cellDelay}}ms; --cell-color: {{color}};{{/if}}"
+        ></div>
+        {{/each}}
+    </div>
+</section>

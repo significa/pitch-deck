@@ -1,0 +1,295 @@
+[data-slide-type="number"] {
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* ── Header ──────────────────────────────────────────────────────────────── */
+
+.number__header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+/* ── Band ────────────────────────────────────────────────────────────────── */
+
+.number__band {
+    position: relative;
+    overflow: hidden;
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    transform: translateY(100%);
+}
+
+[data-active] .number__band {
+    animation: number-band-slide 500ms cubic-bezier(0.05, 0.7, 0.1, 1) both;
+    animation-delay: var(--band-slide-delay, 0ms);
+}
+
+/* Colored background */
+.number__band::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--band-color);
+    z-index: 0;
+}
+
+/* Grain texture */
+.number__band::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.4' numOctaves='4' stitchTiles='stitch' result='noise'/%3E%3CfeColorMatrix in='noise' type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 12 -5' result='contrast'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 200px 200px;
+    mix-blend-mode: overlay;
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* ── Steps row ───────────────────────────────────────────────────────────── */
+
+.number__steps {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.number__step {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    opacity: 0;
+}
+
+.number__step-label {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.number__step-text {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: rgba(0, 0, 0, 0.48);
+}
+
+.number__step-sep {
+    display: flex;
+    align-items: center;
+    color: color-mix(in srgb, var(--band-color) 60%, black);
+}
+
+.number__step-sep:not(.number__step-sep--final) {
+    opacity: 0;
+    transform: translateX(-16px);
+}
+
+.number__step-sep--final {
+    opacity: 0;
+    transform: translateX(-16px);
+}
+
+.number__step-sep svg {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+}
+
+/* ── Payoff ──────────────────────────────────────────────────────────────── */
+
+.number__payoff {
+    display: flex;
+    align-items: flex-end;
+    gap: 48px;
+    position: relative;
+    z-index: 2;
+    margin-top: auto;
+}
+
+.number__value {
+    flex-shrink: 0;
+    color: white;
+    opacity: 0;
+    transform: translateX(40px);
+    margin-left: -24px;
+}
+
+.number__side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding-bottom: 16px;
+}
+
+.number__trend {
+    display: flex;
+    align-items: center;
+    color: color-mix(in srgb, var(--band-color) 60%, black);
+    opacity: 0;
+    margin-top: -240px;
+}
+
+.number__trend--up {
+    transform: translateX(-80px) translateY(80px);
+}
+.number__trend--down {
+    transform: translateX(-80px) translateY(-80px);
+}
+
+.number__trend svg {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+}
+
+.number__value-content {
+    margin-top: 24px;
+    margin-left: 16px;
+}
+
+.number__value-title {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.64);
+}
+
+p.number__caption {
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    max-width: 280px;
+    margin-top: 4px;
+    color: rgba(0, 0, 0, 0.64);
+}
+
+/* ── Animations ──────────────────────────────────────────────────────────── */
+
+[data-active] .number__step {
+    animation: number-fade-in 360ms cubic-bezier(0.05, 0.7, 0.1, 1) both;
+    animation-delay: var(--step-delay, 0ms);
+}
+
+[data-active] .number__step-sep:not(.number__step-sep--final) {
+    animation: number-sep-slide 280ms cubic-bezier(0.05, 0.7, 0.1, 1) both;
+    animation-delay: var(--step-delay, 0ms);
+}
+
+[data-active] .number__step-sep--final {
+    animation: number-sep-slide 280ms cubic-bezier(0.05, 0.7, 0.1, 1) both;
+    animation-delay: var(--step-delay, 0ms);
+}
+
+[data-active] .number__value {
+    animation: number-value-in 500ms cubic-bezier(0.05, 0.7, 0.1, 1) both;
+    animation-delay: var(--value-delay, 0ms);
+}
+
+[data-active] .number__trend--up {
+    animation: number-trend-up-in 450ms cubic-bezier(0.05, 0.7, 0.1, 1) both;
+    animation-delay: var(--arrow-delay, 0ms);
+}
+
+[data-active] .number__trend--down {
+    animation: number-trend-down-in 450ms cubic-bezier(0.05, 0.7, 0.1, 1) both;
+    animation-delay: var(--arrow-delay, 0ms);
+}
+
+[data-active] .number__value-title,
+[data-active] .number__caption {
+    animation: number-text-in 350ms cubic-bezier(0.05, 0.7, 0.1, 1) both;
+    animation-delay: var(--caption-delay, 0ms);
+}
+
+@keyframes number-band-slide {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes number-sep-slide {
+    from {
+        opacity: 0;
+        transform: translateX(-24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes number-value-in {
+    from {
+        opacity: 0;
+        transform: translateX(48px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes number-trend-up-in {
+    from {
+        opacity: 0;
+        transform: translateX(-64px) translateY(64px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes number-trend-down-in {
+    from {
+        opacity: 0;
+        transform: translateX(-64px) translateY(-64px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes number-text-in {
+    from {
+        opacity: 0;
+        transform: translateX(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes number-fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

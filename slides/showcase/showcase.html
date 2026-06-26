@@ -1,0 +1,44 @@
+<section class="slide" data-slide-type="showcase">
+    <div class="slide-left slide-left--showcase">
+        <div class="slide-header">{{> slide-header}}</div>
+        {{#if metrics}}
+        <div class="showcase__metrics">
+            {{#each metrics}}
+            <div class="showcase__metric">
+                <div class="showcase__metric-value-wrapper">
+                    <h3 class="showcase__metric-value">{{value}}</h3>
+                    {{#if trend}}
+                    <span
+                        class="showcase__metric-trend showcase__metric-trend--{{trend}}"
+                    >
+                        <i data-lucide="{{trendIcon}}"></i>
+                        {{trendValue}}
+                    </span>
+                    {{/if}}
+                </div>
+                <p class="content__label showcase__metric-label">{{label}}</p>
+            </div>
+            {{/each}}
+        </div>
+        {{/if}}
+    </div>
+    <div class="showcase__media">
+        <div class="showcase__bars">
+            {{#each media}}
+            <div class="showcase__bar">
+                <div class="showcase__bar-fill"></div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="showcase__media-images">
+            {{#each media}}
+            <img src="{{this}}" alt="" class="showcase__media-item" />
+            {{/each}}
+            {{#if mediaIsEmpty}}
+            <div class="media-placeholder showcase__media-item" data-active>
+                <p class="media-placeholder__label">image</p>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+</section>

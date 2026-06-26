@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /Users/ruisereno/code/pitch-deck/.claude)",
+      "mcp__Claude_Preview__preview_start",
+      "Skill(run)",
+      "Skill(run:*)",
+      "Bash(npx serve *)",
+      "Bash(node build.js)",
+      "Bash(node /Users/ruisereno/code/pitch-deck/build.js)",
+      "Bash(pkill -f \"npx serve\")",
+      "Bash(lsof -ti:3000)",
+      "Bash(xargs kill -9)",
+      "Bash(npm run *)",
+      "Bash(pkill -f \"build.js\")",
+      "WebSearch",
+      "WebFetch(domain:unsplash.com)",
+      "Bash(mkdir -p /Users/ruisereno/code/pitch-deck/slides/budget)",
+      "Bash(open http://localhost:53424)",
+      "Bash(grep -n '`\\\\${currency}' /Users/ruisereno/code/pitch-deck/build.js)",
+      "Bash(grep -n \"currency\\\\|€\\\\|\\\\\\\\\\\\$\" /Users/ruisereno/code/pitch-deck/CLAUDE.md)",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(grep -A 30 \"### \\\\`waffle\\\\`\" /Users/ruisereno/code/pitch-deck/CLAUDE.md)",
+      "Bash(node -e ' *)",
+      "Bash(node build.js --deck /tmp/deck-test.json)",
+      "Bash(cp deck.json /tmp/deck-backup.json)",
+      "Bash(cp /tmp/deck-backup.json deck.json)",
+      "Bash(grep -n \"^### \\\\`\" /Users/ruisereno/code/pitch-deck/CLAUDE.md)",
+      "Bash(grep -n \"^### \\\\`scope\" /Users/ruisereno/code/pitch-deck/CLAUDE.md)",
+      "Bash(open http://localhost:3000)",
+      "Bash(grep -n \"the hero figure, verbatim\\\\|### \\\\`number\\\\`\\\\|Band color\\\\|### \\\\`compare\\\\`\" CLAUDE.md)",
+      "Bash(node build.js example)",
+      "Bash(node build.js mhap)",
+      "Bash(node -e \"require\\('./build.js'\\)\")",
+      "Bash(node build.js ai-studio)"
+    ]
+  }
+}

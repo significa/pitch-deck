@@ -1,0 +1,327 @@
+[data-slide-type="statement"] {
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---- variant: center ---- */
+
+.statement__center {
+    position: relative;
+    padding: 0 64px;
+    text-align: center;
+    opacity: 0;
+}
+
+.statement__label-wrap {
+    position: absolute;
+    bottom: calc(100% + 32px);
+    left: 0;
+    right: 0;
+}
+
+.statement__headline {
+    font-size: 110px;
+    font-weight: 500;
+    line-height: 100px;
+    letter-spacing: -5px;
+
+    text-align: center;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.slide[data-active] .statement__center {
+    animation: statement-headline-in 700ms cubic-bezier(0.05, 0.7, 0.1, 1) 80ms
+        forwards;
+}
+
+@keyframes statement-headline-in {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Thumbnail: snap to final state, do not animate */
+
+[data-thumbnail] .statement__label-wrap,
+[data-thumbnail] .statement__headline {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+/* ---- variant: text ---- */
+
+[data-slide-type="statement"][data-variant="text"] {
+    flex-direction: row;
+    align-items: stretch;
+    padding: 0;
+    justify-content: space-between;
+}
+
+/* right column */
+
+.statement__text-left.slide-left {
+    border-right: none;
+}
+
+.statement__text-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(16px);
+    max-width: 50%;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.statement__text-body {
+    max-width: 600px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* optional media panel below the body */
+
+.statement__text-media {
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+    background-color: #eeebe7;
+    margin-top: 32px;
+    min-height: 0;
+}
+
+.statement__text-media .statement__media-asset {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: none;
+}
+
+.statement__text-media.statement__media--cover .statement__media-asset {
+    object-fit: cover;
+}
+
+.statement__text-media.statement__media--contain .statement__media-asset {
+    object-fit: contain;
+}
+
+.statement__text-media .statement__media-embed-wrapper {
+    position: absolute;
+    inset: 0;
+}
+
+.statement__text-media .media-placeholder {
+    position: absolute;
+    inset: 0;
+}
+
+/* body paragraph that follows the media panel */
+
+.statement__text-media + .statement__text-body {
+    flex-shrink: 0;
+    margin-top: 24px;
+}
+
+/* animations */
+
+@keyframes statement-text-in {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide[data-active] .statement__text-right {
+    animation: statement-text-in 700ms cubic-bezier(0.05, 0.7, 0.1, 1) 80ms
+        forwards;
+}
+
+/* thumbnails */
+
+[data-thumbnail] .statement__text-right {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+[data-thumbnail] .statement__text-media .statement__media-iframe {
+    display: none;
+}
+
+/* ---- variant: media ---- */
+
+[data-slide-type="statement"][data-variant="media"] {
+    padding: 0;
+}
+
+.statement__media {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    opacity: 0;
+    background-color: #eeebe7;
+}
+
+.statement__media--cover .statement__media-asset {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: none;
+}
+
+.statement__media--contain .statement__media-asset {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border: none;
+}
+
+.statement__media-embed-wrapper {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-color: #eeebe7;
+}
+
+.statement__media-iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.statement__media-video {
+    cursor: pointer;
+}
+
+.slide[data-active] .statement__media {
+    animation: statement-media-in 700ms cubic-bezier(0.05, 0.7, 0.1, 1) forwards;
+}
+
+@keyframes statement-media-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+[data-thumbnail] .statement__media {
+    animation: none !important;
+    opacity: 1 !important;
+}
+
+[data-thumbnail] .statement__media-iframe {
+    display: none;
+}
+
+/* ---- variant: feature ---- */
+
+[data-slide-type="statement"][data-variant="feature"] {
+    padding: 0;
+}
+
+.statement__feature {
+    position: absolute;
+    inset: 0;
+    display: flex;
+}
+
+.statement__feature--side {
+    flex-direction: row;
+}
+
+.statement__feature--below {
+    flex-direction: column;
+}
+
+/* text panel */
+
+.statement__feature--below .statement__feature-text {
+    flex-shrink: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* media panel */
+
+.statement__feature-media {
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+    background-color: #eeebe7;
+    opacity: 0;
+}
+
+.statement__feature-media .statement__media-asset {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: none;
+}
+
+.statement__feature-media.statement__media--cover .statement__media-asset {
+    object-fit: cover;
+}
+
+.statement__feature-media.statement__media--contain .statement__media-asset {
+    object-fit: contain;
+}
+
+.statement__feature-media .statement__media-embed-wrapper {
+    position: absolute;
+    inset: 0;
+}
+
+.statement__feature-media .media-placeholder {
+    position: absolute;
+    inset: 0;
+}
+
+/* animations */
+
+.slide[data-active] .statement__feature-media {
+    animation: statement-feature-media-in 700ms cubic-bezier(0.05, 0.7, 0.1, 1)
+        200ms forwards;
+}
+
+@keyframes statement-feature-media-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* thumbnails */
+
+[data-thumbnail] .statement__feature-media {
+    animation: none !important;
+    opacity: 1 !important;
+}
+
+[data-thumbnail] .statement__feature .statement__media-iframe {
+    display: none;
+}

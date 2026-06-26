@@ -1,0 +1,77 @@
+@import "components/colors.css";
+@import "components/typography.css";
+@import "components/slide-header/slide-header.css";
+@import "slides/bar/bar.css";
+@import "slides/budget/budget.css";
+@import "slides/compare/compare.css";
+@import "slides/cover/cover.css";
+@import "slides/end/end.css";
+@import "slides/list/list.css";
+@import "slides/number/number.css";
+@import "slides/payment/payment.css";
+@import "slides/showcase/showcase.css";
+@import "slides/statement/statement.css";
+@import "slides/table/table.css";
+@import "slides/tabs/tabs.css";
+@import "slides/team/team.css";
+@import "slides/timeline/timeline.css";
+@import "slides/treemap/treemap.css";
+@import "slides/waffle/waffle.css";
+@import "ui/nav/nav.css";
+@import "ui/sidebar/sidebar.css";
+
+/* ── Global visual ────────────────────────────────────────────────────────── */
+
+.slide {
+    background-color: #eeebe7;
+}
+
+/* ── Media placeholder ───────────────────────────────────────────────────── */
+/* Stands in for any image slot where no URL has been supplied yet.
+   Occupies the exact footprint of the real asset so layout does not reflow
+   when a URL is later added. */
+
+.media-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.media-placeholder::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.4' numOctaves='4' stitchTiles='stitch' result='noise'/%3E%3CfeColorMatrix in='noise' type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 12 -5' result='contrast'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 200px 200px;
+    mix-blend-mode: overlay;
+    opacity: 0.12;
+    pointer-events: none;
+}
+
+.media-placeholder__label {
+    font-size: 11px;
+    font-family: "JetBrains Mono", monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 1;
+}
+
+/* ── Reusable layout ──────────────────────────────────────────────────────── */
+
+.slide-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    max-width: 660px;
+}

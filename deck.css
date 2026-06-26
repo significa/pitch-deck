@@ -1,0 +1,77 @@
+/* ─── STRUCTURAL ──────────────────────────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    background: #0a0a0a;
+}
+
+/* ── Deck container ───────────────────────────────────────────────────────── */
+
+.deck {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 20;
+    transition: transform 300ms cubic-bezier(0.05, 0.7, 0.1, 1);
+}
+
+body[data-sidebar-open] .deck {
+    transform: translateX(272px);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* ── Slide ────────────────────────────────────────────────────────────────── */
+
+.slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.slide[data-active] {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ── Component ────────────────────────────────────────────────────────────── */
+
+.component {
+    min-width: 0;
+    min-height: 0;
+    flex-shrink: 0;
+}
+
+/* ── Tabs ─────────────────────────────────────────────────────────────────── */
+
+[data-tab-panel] {
+    display: none;
+}
+[data-tab-panel][data-active] {
+    display: block;
+}
+
+/* ── Thumbnail: force all animations to their final state instantly ─────────── */
+
+[data-thumbnail] * {
+    animation-duration: 0ms !important;
+    animation-delay: 0ms !important;
+}
+
+[data-thumbnail] [data-stagger] > * {
+    opacity: 1 !important;
+    transform: none !important;
+}

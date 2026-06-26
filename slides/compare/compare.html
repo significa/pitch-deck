@@ -1,0 +1,27 @@
+<section class="slide" data-slide-type="compare">
+    <div class="slide-left slide-left--compare">
+        <div class="slide-header">{{> slide-header}}</div>
+    </div>
+    <div class="compare__columns">
+        {{#each bars}}
+        <div
+            class="compare__col{{#if isShort}} compare__col--short{{/if}}"
+            style="--bar-color: {{itemColor}}; --bar-height: {{barPct}}; --bar-duration: {{barDuration}}ms; --bar-delay: {{barDelay}}ms; --label-delay: {{labelDelay}}ms;"
+        >
+            <div class="compare__col-label compare__col-label--above">
+                <p class="compare__col-value">{{value}}</p>
+                {{#if title}}<p class="compare__col-title">{{title}}</p>{{/if}}
+                {{#if caption}}<p class="compare__col-caption">{{caption}}</p>{{/if}}
+            </div>
+            <div class="compare__bar">
+                <div class="compare__bar-fill"></div>
+                <div class="compare__col-label compare__col-label--inside">
+                    <p class="compare__col-value">{{value}}</p>
+                    {{#if title}}<p class="compare__col-title">{{title}}</p>{{/if}}
+                    {{#if caption}}<p class="compare__col-caption">{{caption}}</p>{{/if}}
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</section>

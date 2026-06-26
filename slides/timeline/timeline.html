@@ -1,0 +1,36 @@
+<section class="slide" data-slide-type="timeline">
+    <div class="slide-header">{{> slide-header}}</div>
+    <div class="timeline__track">
+        {{#if startDate}}
+        <div class="timeline__dates">
+            <div>
+                <p class="timeline__dates-label">Starting at</p>
+                <p>{{startDate}}</p>
+            </div>
+            <div class="timeline__dates-end">
+                <p class="timeline__dates-label">Delivered at</p>
+                <p>{{endDate}}</p>
+            </div>
+        </div>
+        {{/if}}
+        <div>
+            {{#each phases}}
+            <div class="timeline__row">
+                <div class="timeline__bars">
+                    <div
+                        class="timeline__bar"
+                        style="--duration: {{duration}}; --offset: {{offset}}; --total: {{total}}; --bar-delay: {{barDelay}}ms; --item-color: {{itemColor}};"
+                    >
+                        <div class="timeline__phase-info">
+                            <p class="content__label timeline__phase-duration">
+                                {{duration}} {{unit}}
+                            </p>
+                            <h3 class="timeline__phase-label">{{label}}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>

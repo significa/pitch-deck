@@ -1,0 +1,26 @@
+<section class="slide" data-slide-type="treemap">
+    <div class="slide-left slide-left--treemap">
+        <div class="slide-header">{{> slide-header}}</div>
+    </div>
+    <div class="treemap__canvas">
+        {{#each cells}}
+        <div
+            class="treemap__cell"
+            style="left: {{x}}%; top: {{y}}%; width: {{w}}%; height: {{h}}%; --item-color: {{itemColor}}; --cell-reveal-delay: {{revealDelay}}ms; --cell-number-delay: {{numberDelay}}ms; --cell-label-delay: {{labelDelay}}ms;"
+        >
+            <div class="treemap__grain"></div>
+            <div class="treemap__cell-content">
+                <p class="treemap__value display-number">{{value}}</p>
+                {{#if showText}}
+                <div class="treemap__item-text">
+                    <p class="treemap__item-label">{{label}}</p>
+                    {{#if description}}
+                    <p class="treemap__item-description">{{description}}</p>
+                    {{/if}}
+                </div>
+                {{/if}}
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</section>

@@ -1,0 +1,56 @@
+<section class="slide" data-slide-type="number">
+    <div class="number__header">
+        <div class="slide-header">{{> slide-header}}</div>
+    </div>
+    <div
+        class="number__band"
+        style="--band-color: {{bandColor}}; --band-slide-delay: {{bandSlideDelay}}ms; --value-delay: {{valueDelay}}ms; --caption-delay: {{captionDelay}}ms; --arrow-delay: {{arrowDelay}}ms;"
+    >
+        {{#if hasSteps}}
+        <div class="number__steps">
+            {{#each stepsWithArrows}} {{#if isStep}}
+            <span class="number__step" style="--step-delay: {{delay}}ms;"
+                >{{#if stepLabel}}<span class="number__step-label">{{stepLabel}}</span>{{/if}}<span class="number__step-text">{{stepText}}</span></span
+            >
+            {{/if}} {{#if isArrow}}
+            <span class="number__step-sep{{#if isFinalArrow}} number__step-sep--final{{/if}}" style="--step-delay: {{delay}}ms;"
+                ><i data-lucide="arrow-right"></i
+            ></span>
+            {{/if}} {{/each}}
+        </div>
+        {{/if}}
+        <div class="number__payoff">
+            <p class="number__value display-number--larger">{{value}}</p>
+            <div class="number__side">
+                {{#if trendIcon}}
+                <span class="number__trend number__trend--{{trend}}">
+                    {{#if trendUp}}<svg
+                        viewBox="5.5 5.5 13 13"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+                        <path d="M7 7h10v10" />
+                        <path d="M7 17 17 7" /></svg
+                    >{{/if}} {{#if trendDown}}<svg
+                        viewBox="5.5 5.5 13 13"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+                        <path d="M7 17h10V7" />
+                        <path d="M7 7 17 17" /></svg
+                    >{{/if}}
+                </span>
+                {{/if}}
+                <div class="number__value-content">
+                    {{#if valueTitle}}
+                    <p class="number__value-title">{{valueTitle}}</p>
+                    {{/if}} {{#if caption}}
+                    <p class="number__caption">{{caption}}</p>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

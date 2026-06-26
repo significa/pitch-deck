@@ -1,0 +1,12 @@
+/* ─── slide-header ────────────────────────────────────────────────────────
+   Reusable label + headline + body block. Used at the top of most slides.
+   ────────────────────────────────────────────────────────────────────────── */
+
+.slide-header {
+    padding: 32px;
+    max-width: 660px;
+}
+
+.slide-header__body {
+    margin-top: 16px;
+}

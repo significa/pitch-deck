@@ -1,0 +1,16 @@
+<section class="slide" data-slide-type="bar" style="--bar-width: {{fill}}%; --item-color: {{itemColor}};">
+    <div class="slide-header">{{> slide-header}}</div>
+    <div class="bar__fill">
+        <div class="bar__grain"></div>
+        <div class="slide-header">{{> slide-header}}</div>
+    </div>
+    <div class="bar__info">
+        {{#if valueTitle}}
+        <p class="bar__value-title">{{valueTitle}}</p>
+        {{/if}}
+        {{#if valueLabel}}
+        <p class="bar__value-label">{{valueLabel}}</p>
+        {{/if}}
+        <p class="bar__value display-number">{{value}}</p>
+    </div>
+</section>

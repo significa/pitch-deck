@@ -1,0 +1,199 @@
+{
+  "slides": [
+    {
+      "template": "cover",
+      "headline": "Brand-grade product imagery, generated.",
+      "body": "Your whole catalogue, shot in any scene, in 2K and 4K, without a studio.",
+      "client": {
+        "name": "Significa AI Studio",
+        "color": "rust"
+      },
+      "sharedDate": "June 2026",
+      "partner": "Significa"
+    },
+    {
+      "template": "list",
+      "label": "The grind",
+      "headline": "Product imagery is a relentless, expensive grind.",
+      "items": [
+        {
+          "heading": "The volume never stops",
+          "body": "Every SKU, season, campaign, and market wants its own shots, and it wants them now."
+        },
+        {
+          "heading": "Studios are slow and costly",
+          "body": "Weeks of lead time, samples shipped, models and locations booked, and a shoot-sized bill for every refresh."
+        },
+        {
+          "heading": "The cheap AI tools miss",
+          "body": "Fast, but off-brand, generic, and inconsistent from one image to the next."
+        },
+        {
+          "heading": "Every change is a reshoot",
+          "body": "A new colourway or a swapped prop means starting the whole thing over."
+        },
+        {
+          "heading": "Then you do it all by hand",
+          "body": "Resize, rename, and upload every finished file into your store yourself.",
+          "color": "rust"
+        }
+      ]
+    },
+    {
+      "template": "statement",
+      "variant": "center",
+      "label": "The real problem",
+      "headline": "You don't need cheaper images. You need your brand, at catalogue scale."
+    },
+    {
+      "template": "statement",
+      "variant": "media",
+      "media": {
+        "type": "image",
+        "url": "https://cdn.significa.co/ai-studio/1782311776140-JjyFsN.png",
+        "fit": "cover"
+      }
+    },
+    {
+      "template": "statement",
+      "variant": "feature",
+      "label": "Range",
+      "headline": "Your brand, on anyone, anywhere.",
+      "body": "People or products, studio or lifestyle. Every image is generated from your catalogue and your brand system, so it looks like you across the whole range, not like a stock filter.",
+      "orientation": "side",
+      "media": {
+        "type": "image",
+        "url": "https://cdn.significa.co/ai-studio/1782145912324-fcMIhq.png",
+        "fit": "cover",
+        "anchor": "top"
+      }
+    },
+    {
+      "template": "statement",
+      "variant": "feature",
+      "label": "Resolution",
+      "headline": "Sharp enough to print, in 2K and 4K.",
+      "body": "Every generation runs up to 4K, down to the texture of a fabric or the facets of a stone. Ready for zoom, hero banners, and print, not just a thumbnail.",
+      "orientation": "side",
+      "media": {
+        "type": "image",
+        "url": "https://cdn.significa.co/ai-studio/1780408032031_processed-PK5Qcz.png",
+        "fit": "cover"
+      }
+    },
+    {
+      "template": "statement",
+      "variant": "feature",
+      "label": "Control",
+      "headline": "Not a slot machine. You direct every shot.",
+      "body": "Pull a product straight from Shopify or your CMS, then set the scene, the look, and the lighting. If something is not right, point at it and say what to change: swap the shoes, fix a detail, change the background. No re-shoot, no starting over. Approve it, and it publishes back to your store.",
+      "orientation": "side",
+      "media": {
+        "type": "image",
+        "url": "https://cdn.significa.co/ai-studio/screenshot-2026-06-26-at-14.12.13-6L4Iyz.png",
+        "fit": "cover",
+        "anchor": "bottom"
+      }
+    },
+    {
+      "template": "statement",
+      "variant": "feature",
+      "label": "The finish",
+      "headline": "Finished on real film stocks, not an AI filter.",
+      "body": "Apply the look of real photography, Portra, Ektar, Superia, and more, so the grain, colour, and depth read like a shoot rather than a render. It is the difference between an image you could run as a campaign and one that gives itself away as AI.",
+      "orientation": "side",
+      "media": {
+        "type": "image",
+        "url": "https://cdn.significa.co/ai-studio/screenshot-2026-06-26-at-14.37.53-MaGE4a.png",
+        "fit": "cover",
+        "anchor": "bottom"
+      }
+    },
+    {
+      "template": "statement",
+      "variant": "feature",
+      "label": "Your library",
+      "headline": "Every shot, saved and organised.",
+      "body": "Each image you generate lands in your library, organised by product and look, ready to reuse, re-export, or publish. Your whole visual catalogue in one place, growing every time you create.",
+      "orientation": "below",
+      "media": {
+        "type": "image",
+        "url": "https://cdn.significa.co/ai-studio/ai-studio-1-uoVYUm.png",
+        "fit": "cover"
+      }
+    },
+    {
+      "template": "statement",
+      "variant": "feature",
+      "label": "Let's be honest",
+      "headline": "You have seen image tools at a few euros a month. This is not one of them.",
+      "body": "Those make pixels. This replaces a photo shoot: brand-locked, in your stack, copy included, at a resolution you can print. Compare it to what a studio day costs you, not to a filter app, and the maths changes completely.",
+      "orientation": "side",
+      "media": {
+        "type": "image",
+        "url": "https://cdn.significa.co/ai-studio/1782215462096_processed-cWst1y.png",
+        "fit": "cover",
+        "anchor": "top"
+      }
+    },
+    {
+      "template": "statement",
+      "variant": "feature",
+      "label": "Built for Europe",
+      "headline": "Generate AI imagery without the legal risk.",
+      "body": "AI Studio is built to meet the EU AI Act. Every generated image is transparently marked as AI-created the way the Act requires, and every action is captured in a full audit trail, so you always know what was made, by whom, and when. Compliance is built in, not bolted on.",
+      "orientation": "below",
+      "media": {
+        "type": "image",
+        "url": "https://cdn.significa.co/ai-studio/ai-studio-2-e7SgMp.png",
+        "fit": "cover"
+      }
+    },
+    {
+      "template": "table",
+      "label": "Pricing",
+      "headline": "Pick the volume, not the features.",
+      "body": "Every plan includes the entire product, today and everything we add later, with copy and hands-on onboarding always included. The only thing that ever changes is how many images you make. Pick monthly or yearly billing, and the bigger your plan, the less every image costs. Start free with 15 a month, then go beyond your plan any time at the usage rate. One credit is one image, and 4K counts as two. Need more than 2,500 a month? Enterprise is built for you.",
+      "headerColumn": true,
+      "columns": [
+        { "label": "—" },
+        { "label": "Starter" },
+        { "label": "Growth", "accent": "emerald" },
+        { "label": "Scale" }
+      ],
+      "rows": [
+        { "cells": [ { "label": "Monthly" }, { "label": "59€", "description": "/mo, billed monthly" }, { "label": "239€", "description": "/mo, billed monthly" }, { "label": "719€", "description": "/mo, billed monthly" } ] },
+        { "cells": [ { "label": "Yearly" }, { "label": "49€", "description": "/mo, billed yearly" }, { "label": "199€", "description": "/mo, billed yearly" }, { "label": "599€", "description": "/mo, billed yearly" } ] },
+        { "cells": [ { "label": "Images / month" }, { "label": "150" }, { "label": "750" }, { "label": "2.500" } ] },
+        { "cells": [ { "label": "In 4K" }, { "label": "75" }, { "label": "375" }, { "label": "1.250" } ] },
+        { "cells": [ { "label": "Copy generation" }, { "label": "Included" }, { "label": "Included" }, { "label": "Included" } ] },
+        { "cells": [ { "label": "Onboarding & setup" }, { "label": "Included" }, { "label": "Included" }, { "label": "Included" } ] },
+        { "cells": [ { "label": "Extra usage (2K / 4K)" }, { "label": "0,40€ / 0,80€" }, { "label": "0,40€ / 0,80€" }, { "label": "0,40€ / 0,80€" } ] }
+      ]
+    },
+    {
+      "template": "statement",
+      "variant": "feature",
+      "label": "Enterprise",
+      "headline": "When you outgrow Scale, we tailor the whole thing.",
+      "body": "For brands generating more than 2,500 images a month. Committed volume at the best per-image rate, an uptime SLA, custom brand-model tuning, and a dedicated team that onboards you and stays close.",
+      "orientation": "below",
+      "media": {
+        "type": "image",
+        "url": "https://cdn.significa.co/ai-studio/rivelia_2_final-proof-of-concept-KCnSF4.png",
+        "fit": "cover"
+      }
+    },
+    {
+      "template": "end",
+      "headline": "Start generating.",
+      "body": "Create your first 15 images free, no card. Talk to us about Enterprise at significa.co.",
+      "client": {
+        "name": "Significa AI Studio",
+        "color": "rust"
+      },
+      "sharedDate": "June 2026",
+      "partner": "Significa"
+    }
+  ]
+}

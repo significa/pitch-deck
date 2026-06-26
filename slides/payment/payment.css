@@ -1,0 +1,122 @@
+[data-slide-type="payment"] {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+@keyframes payment-reveal {
+    from {
+        clip-path: inset(0 0 100% 0);
+    }
+    to {
+        clip-path: inset(0 0 0% 0);
+    }
+}
+
+@keyframes payment-text-in {
+    from {
+        opacity: 0;
+        transform: translateX(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+[data-slide-type="payment"] .payment__item {
+    clip-path: inset(0 0 100% 0);
+}
+
+[data-slide-type="payment"][data-active] .payment__item {
+    animation: payment-reveal var(--reveal-duration, 200ms)
+        cubic-bezier(0.4, 0, 0.5, 1) both;
+    animation-delay: var(--reveal-delay, 0ms);
+}
+
+[data-slide-type="payment"] .payment__wrapper p,
+[data-slide-type="payment"] .payment__wrapper span {
+    opacity: 0;
+}
+
+[data-slide-type="payment"][data-active] .payment__item p,
+[data-slide-type="payment"][data-active] .payment__item span {
+    animation: payment-text-in 200ms cubic-bezier(0.05, 0.7, 0.1, 1) both;
+    animation-delay: var(--text-delay, 0ms);
+}
+
+.payment__wrapper {
+    display: grid;
+    align-self: stretch;
+    height: 100%;
+    flex: 1;
+    max-width: 680px;
+    border-left: 1px solid rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+.payment__item {
+    overflow: hidden;
+    min-height: 0;
+    background: var(--item-color);
+    padding: 16px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment__item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.4' numOctaves='4' stitchTiles='stitch' result='noise'/%3E%3CfeColorMatrix in='noise' type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 12 -5' result='contrast'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 200px 200px;
+    mix-blend-mode: overlay;
+    opacity: 0.2;
+    pointer-events: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment__item-amount {
+    font-size: 120px;
+    line-height: 100px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    letter-spacing: -8px;
+    margin-left: -7px;
+}
+
+p.payment__item-label {
+    margin-top: 12px;
+    opacity: 0.8;
+    color: white;
+}
+
+.payment__installments {
+    display: grid;
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.payment__installment {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 8px 16px;
+}
+
+.payment__item-description,
+.payment__installment-content {
+    width: 40%;
+    max-width: 300px;
+    position: relative;
+}
+
+.payment__item-description-text {
+    font-size: 15px;
+    line-height: 20px;
+    color: white;
+}

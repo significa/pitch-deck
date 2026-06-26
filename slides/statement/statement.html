@@ -1,0 +1,157 @@
+<section class="slide" data-slide-type="statement" data-variant="{{variant}}">
+    {{#if variantIsCenter}}
+    <div class="statement__center">
+        {{#if label}}
+        <div class="statement__label-wrap">
+            <p class="content__label">{{label}}</p>
+        </div>
+        {{/if}}
+        <p class="statement__headline">{{headline}}</p>
+    </div>
+    {{/if}}
+    {{#if variantIsText}}
+    <div class="statement__text-left slide-left">
+        <div class="slide-header">
+            {{> slide-header}}
+            {{#if lede}}
+            <p class="slide-header__body">{{lede}}</p>
+            {{/if}}
+        </div>
+    </div>
+    <div class="statement__text-right">
+        <p class="statement__text-body">{{textBody}}</p>
+        {{#if textHasMedia}}
+        <div class="statement__text-media statement__media--{{mediaFit}}">
+            {{#if mediaIsImage}}
+            {{#if mediaUrlPresent}}
+            <img class="statement__media-asset" src="{{mediaUrl}}" alt="" style="{{mediaAnchorStyle}}" />
+            {{/if}}
+            {{#if mediaUrlMissing}}
+            <div class="media-placeholder"><p class="media-placeholder__label">image</p></div>
+            {{/if}}
+            {{/if}}
+            {{#if mediaIsVideo}}
+            {{#if mediaUrlPresent}}
+            <video class="statement__media-asset statement__media-video"
+                   src="{{mediaUrl}}"
+                   poster="{{mediaPoster}}"
+                   playsinline
+                   preload="metadata"
+                   style="{{mediaAnchorStyle}}">
+            </video>
+            {{/if}}
+            {{#if mediaUrlMissing}}
+            <div class="media-placeholder"><p class="media-placeholder__label">video</p></div>
+            {{/if}}
+            {{/if}}
+            {{#if mediaIsEmbed}}
+            {{#if mediaUrlPresent}}
+            <div class="statement__media-embed-wrapper" style="{{mediaPosterStyle}}">
+                <iframe class="statement__media-iframe"
+                        data-src="{{mediaUrl}}"
+                        allow="fullscreen; autoplay"
+                        sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-presentation"
+                        title="Embed">
+                </iframe>
+            </div>
+            {{/if}}
+            {{#if mediaUrlMissing}}
+            <div class="media-placeholder"><p class="media-placeholder__label">embed</p></div>
+            {{/if}}
+            {{/if}}
+        </div>
+        {{/if}}
+        {{#if after}}
+        <p class="statement__text-body">{{after}}</p>
+        {{/if}}
+    </div>
+    {{/if}}
+    {{#if variantIsMedia}}
+    <div class="statement__media statement__media--{{mediaFit}}">
+        {{#if mediaIsImage}}
+        {{#if mediaUrlPresent}}
+        <img class="statement__media-asset" src="{{mediaUrl}}" alt="" style="{{mediaAnchorStyle}}" />
+        {{/if}}
+        {{#if mediaUrlMissing}}
+        <div class="media-placeholder"><p class="media-placeholder__label">image</p></div>
+        {{/if}}
+        {{/if}}
+        {{#if mediaIsVideo}}
+        {{#if mediaUrlPresent}}
+        <video class="statement__media-asset statement__media-video"
+               src="{{mediaUrl}}"
+               poster="{{mediaPoster}}"
+               playsinline
+               preload="metadata">
+        </video>
+        {{/if}}
+        {{#if mediaUrlMissing}}
+        <div class="media-placeholder"><p class="media-placeholder__label">video</p></div>
+        {{/if}}
+        {{/if}}
+        {{#if mediaIsEmbed}}
+        {{#if mediaUrlPresent}}
+        <div class="statement__media-embed-wrapper" style="{{mediaPosterStyle}}">
+            <iframe class="statement__media-iframe"
+                    data-src="{{mediaUrl}}"
+                    allow="fullscreen; autoplay"
+                    sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-presentation"
+                    title="Embed">
+            </iframe>
+        </div>
+        {{/if}}
+        {{#if mediaUrlMissing}}
+        <div class="media-placeholder"><p class="media-placeholder__label">embed</p></div>
+        {{/if}}
+        {{/if}}
+    </div>
+    {{/if}}
+    {{#if variantIsFeature}}
+    <div class="statement__feature statement__feature--{{featureOrientation}}">
+        <div class="statement__feature-text {{featureTextClass}}">
+            <div class="slide-header">
+                {{> slide-header}}
+            </div>
+        </div>
+        <div class="statement__feature-media statement__media--{{mediaFit}}">
+            {{#if mediaIsImage}}
+            {{#if mediaUrlPresent}}
+            <img class="statement__media-asset" src="{{mediaUrl}}" alt="" style="{{mediaAnchorStyle}}" />
+            {{/if}}
+            {{#if mediaUrlMissing}}
+            <div class="media-placeholder"><p class="media-placeholder__label">image</p></div>
+            {{/if}}
+            {{/if}}
+            {{#if mediaIsVideo}}
+            {{#if mediaUrlPresent}}
+            <video class="statement__media-asset statement__media-video"
+                   src="{{mediaUrl}}"
+                   poster="{{mediaPoster}}"
+                   playsinline
+                   preload="metadata"
+                   style="{{mediaAnchorStyle}}">
+            </video>
+            {{/if}}
+            {{#if mediaUrlMissing}}
+            <div class="media-placeholder"><p class="media-placeholder__label">video</p></div>
+            {{/if}}
+            {{/if}}
+            {{#if mediaIsEmbed}}
+            {{#if mediaUrlPresent}}
+            <div class="statement__media-embed-wrapper" style="{{mediaPosterStyle}}">
+                <iframe class="statement__media-iframe"
+                        data-src="{{mediaUrl}}"
+                        allow="fullscreen; autoplay"
+                        sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-presentation"
+                        title="Embed">
+                </iframe>
+            </div>
+            {{/if}}
+            {{#if mediaUrlMissing}}
+            <div class="media-placeholder"><p class="media-placeholder__label">embed</p></div>
+            {{/if}}
+            {{/if}}
+        </div>
+    </div>
+    {{/if}}
+</section>

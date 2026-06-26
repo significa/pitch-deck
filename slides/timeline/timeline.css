@@ -1,0 +1,123 @@
+[data-slide-type="timeline"] {
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+.slide-header {
+    max-width: 660px;
+    padding: 32px;
+    justify-content: space-between;
+}
+
+.timeline__track {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.timeline__dates {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 32px;
+}
+
+.timeline__dates-end {
+    text-align: right;
+}
+
+.timeline__dates p {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.timeline__dates p + p {
+    margin-top: 2px;
+}
+
+.timeline__dates-label {
+    font-weight: 500;
+}
+
+.timeline__row {
+    display: flex;
+    height: 110px;
+    width: 100%;
+    position: relative;
+}
+
+.timeline__row::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.08);
+    z-index: 2;
+}
+
+.timeline__bars {
+    flex: 1;
+    position: relative;
+    height: 100%;
+}
+
+.timeline__bar {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    background: var(--item-color);
+    margin-left: calc(var(--offset, 0) / var(--total) * 100%);
+    width: calc(var(--duration) / var(--total) * 100%);
+}
+
+.timeline__bar::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.4' numOctaves='4' stitchTiles='stitch' result='noise'/%3E%3CfeColorMatrix in='noise' type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 12 -5' result='contrast'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 200px 200px;
+    mix-blend-mode: overlay;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.timeline__phase-info {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 20px;
+    padding-left: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    color: white;
+}
+
+.timeline__phase-duration {
+    opacity: 0.8;
+}
+
+@keyframes track-reveal {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0% 0 0);
+    }
+}
+
+[data-slide-type="timeline"][data-active] .timeline__bars {
+    animation: track-reveal 2000ms cubic-bezier(0.4, 0, 0.5, 1) both;
+}
+
+/* Colors */
+.timeline__row {
+    background: rgba(255, 255, 255, 0.24);
+}

@@ -1,0 +1,827 @@
+{
+  "slides": [
+    {
+      "template": "cover",
+      "headline": "We design and build world-class digital products.",
+      "body": "A partnership built on craft, speed, and shared ambition.",
+      "client": {
+        "name": "Super Bock",
+        "logo": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path fill=\"#FFF\" d=\"M12 .003C5.37.003.003 5.37.003 12S5.37 23.997 12 23.997 23.997 18.63 23.997 12C23.997 5.369 18.63.003 12 .003z\"></path><path fill=\"#005992\" d=\"M20.826 6.3c.206.693.335 1.412.335 2.156 0 2.439-1.21 4.57-3.037 5.93-3.165 2.336-7.798 2.336-14.18 4.339a10.448 10.448 0 0 0 8.055 3.774c5.816 0 10.5-4.698 10.5-10.474 0-2.131-.618-4.082-1.673-5.725z\"></path><path fill=\"#ED1A38\" d=\"M18.304 3.604a10.513 10.513 0 0 0-6.305-2.105c-5.816 0-10.5 4.698-10.5 10.5 0 2.336.772 4.493 2.059 6.213 7.051-2.054 12.636-7.574 14.746-14.608z\"></path></svg>",
+        "color": "red"
+      },
+      "sharedDate": "9 June 2026",
+      "partner": "Rui Sereno"
+    },
+    {
+      "template": "statement",
+      "variant": "center",
+      "label": "O ponto de viragem",
+      "headline": "O site nao esta velho. Esta a tornar-vos invisiveis."
+    },
+    {
+      "template": "statement",
+      "variant": "text",
+      "label": "A abordagem",
+      "headline": "Começamos pelo que vos torna invisíveis.",
+      "lede": "Antes de desenhar seja o que for, percebemos porque é que o que está hoje não está a funcionar.",
+      "body": "Mapeamos onde a procura existe e onde ainda não estais presentes. Cruzamos dados de pesquisa com o comportamento real dos utilizadores para perceber onde o interesse aparece e onde se perde. Identificamos o que a concorrência está a fazer bem, o que está a ignorar, e onde os utilizadores chegam ao vosso site e saem sem converter. Este mapeamento revela as lacunas que um redesenho bem dirigido consegue fechar. Só depois deste trabalho é que sabemos o que construir e porquê. A diferença entre um site que converte e um que não converte raramente está no design. Está no entendimento de quem chega, o que procura, e o que o faz ficar.",
+      "media": {
+        "type": "image"
+      },
+      "after": "Esta análise é o mapa que guia todas as decisões seguintes -- do que se mostra em primeiro lugar ao que se mantém fora do caminho crítico."
+    },
+    {
+      "template": "statement",
+      "variant": "media",
+      "media": {
+        "type": "image",
+        "url": "https://picsum.photos/1920/1080"
+      }
+    },
+    {
+      "template": "statement",
+      "variant": "media",
+      "media": {
+        "type": "video",
+        "url": "../screen-recording.mov"
+      }
+    },
+    {
+      "template": "statement",
+      "variant": "media",
+      "media": {
+        "type": "embed",
+        "url": "https://significa.github.io/delonghi-prototype/",
+        "poster": "https://picsum.photos/seed/proto/1920/1080"
+      }
+    },
+    {
+      "template": "statement",
+      "variant": "feature",
+      "label": "The craft behind the product",
+      "headline": "We work in the open, at every stage.",
+      "body": "Every sprint ends with something real to look at. No status reports, no intermediary layers -- just the product, live, in your browser.",
+      "media": {
+        "type": "image",
+        "url": "https://picsum.photos/seed/feature1/1200/800"
+      }
+    },
+    {
+      "template": "statement",
+      "variant": "feature",
+      "orientation": "below",
+      "label": "Product in motion",
+      "headline": "The full flow, from first click to checkout.",
+      "body": "Recorded on the working prototype. Every interaction you see is real -- no mocks, no smoke and mirrors.",
+      "media": {
+        "type": "video",
+        "url": "../screen-recording.mov"
+      }
+    },
+    {
+      "template": "list",
+      "label": "Our track record",
+      "headline": "The numbers behind the work.",
+      "body": "A fixed-scope engagement with no surprises. Every deliverable is defined upfront and signed off before work begins.",
+      "items": [
+        {
+          "value": "96%",
+          "heading": "On-time delivery rate",
+          "body": "Across 478 engagements since 2018, measured against the agreed deadline at kickoff."
+        },
+        {
+          "value": "4.9",
+          "heading": "Average App Store rating",
+          "body": "Across all mobile products shipped in the last three years.",
+          "color": "emerald"
+        },
+        {
+          "value": "12",
+          "heading": "Years building digital products",
+          "body": "From early-stage startups to enterprise platforms across Europe and North America.",
+          "color": "blue"
+        },
+        {
+          "value": "3×",
+          "heading": "Average return on design investment",
+          "body": "Based on client-reported outcomes 12 months after launch."
+        }
+      ]
+    },
+    {
+      "template": "list",
+      "label": "Our commitments",
+      "headline": "What you can count on.",
+      "body": "A fixed-scope engagement with no surprises. Every deliverable is defined upfront and signed off before work begins.",
+      "items": [
+        {
+          "heading": "A single point of contact",
+          "body": "One product lead accountable for delivery from kickoff to handoff. No account managers, no delegation chains."
+        },
+        {
+          "heading": "Weekly progress demos",
+          "body": "Every sprint ends with a live demo. You see real, working product — not status updates in a slide.",
+          "color": "violet"
+        },
+        {
+          "heading": "No surprises on scope",
+          "body": "Scope is agreed in writing before work begins. Any change is flagged before it affects the timeline or budget."
+        },
+        {
+          "heading": "Post-launch support included",
+          "body": "We remain on standby for four weeks after launch to address anything that comes up in the real world."
+        }
+      ]
+    },
+    {
+      "template": "number",
+      "label": "The return on good design",
+      "headline": "The math speaks for itself.",
+      "body": "A fixed-scope engagement with no surprises. Every deliverable is defined upfront and signed off before work begins.",
+      "steps": [
+        { "label": "Monthly traffic", "text": "180k visitors" },
+        { "label": "Conversion rate", "text": "0.5%" },
+        { "label": "Qualified leads", "text": "660" }
+      ],
+      "value": "120M",
+      "trend": "up",
+      "valueTitle": "Average return on design investment",
+      "caption": "Across client engagements since 2018.",
+      "color": "emerald"
+    },
+    {
+      "template": "number",
+      "label": "Industry failure rate",
+      "headline": "Most digital products don't survive.",
+      "body": "Only 4 in 100 digital products launched in the last decade are still in active use today.",
+      "steps": [
+        { "label": "Products launched", "text": "10.000" },
+        { "label": "Abandoned within 2 years", "text": "96%" }
+      ],
+      "value": "4%",
+      "trend": "down",
+      "valueTitle": "Still in active use after 2 years",
+      "caption": "The industry's default outcome is abandonment."
+    },
+    {
+      "template": "compare",
+      "label": "Content fits inside — ratio 65/100",
+      "headline": "Both bars tall enough to hold label inside.",
+      "body": "Smaller bar is 65% of the taller — above the 40% threshold, so both labels render inside the fill.",
+      "bars": [
+        {
+          "value": "65€",
+          "amount": 65,
+          "title": "Total project investment",
+          "caption": "Fixed scope, no surprises.",
+          "color": "amber"
+        },
+        {
+          "value": "100€",
+          "amount": 100,
+          "title": "Average return on design investment",
+          "caption": "Across client engagements since 2018.",
+          "color": "emerald"
+        }
+      ]
+    },
+    {
+      "template": "compare",
+      "label": "Content above bar — ratio 20/100",
+      "headline": "Short bar pushes label above.",
+      "body": "Smaller bar is 20% of the taller — below the 40% threshold, so the label moves above the fill in black.",
+      "bars": [
+        {
+          "value": "100€",
+          "amount": 100,
+          "title": "Average return on design investment",
+          "caption": "Across client engagements since 2018.",
+          "color": "emerald"
+        },
+        {
+          "value": "20€",
+          "amount": 20,
+          "title": "Total project investment",
+          "caption": "Fixed scope, no surprises.",
+          "color": "amber"
+        }
+      ]
+    },
+    {
+      "template": "table",
+      "label": "Why Significa",
+      "headline": "Not all partners are built the same.",
+      "body": "Most agencies can execute. Few can think. Here's how we compare.",
+      "columns": [
+        { "label": "Criteria" },
+        { "label": "Significa", "accent": "emerald" },
+        { "label": "Boutique Agency" },
+        { "label": "Freelancer", "accent": "rust" }
+      ],
+      "headerColumn": true,
+      "rows": [
+        {
+          "cells": [
+            {
+              "label": "Strategy & product definition",
+              "description": "Ability to shape what gets built, not just how"
+            },
+            {
+              "label": "Full ownership",
+              "description": "From brief to roadmap — we define the product with you"
+            },
+            {
+              "label": "Sometimes",
+              "description": "Depends heavily on the agency's seniority"
+            },
+            {
+              "label": "Rarely",
+              "description": "Typically scoped to execution only"
+            }
+          ]
+        },
+        {
+          "cells": [
+            {
+              "label": "UX research & validation",
+              "description": "User interviews, testing, and insight synthesis"
+            },
+            {
+              "label": "Built in",
+              "description": "Every project begins with structured discovery"
+            },
+            {
+              "label": "Optional add-on",
+              "description": "Often skipped to reduce cost"
+            },
+            {
+              "label": "Not available",
+              "description": "Outside the typical scope of a single contributor"
+            }
+          ]
+        },
+        {
+          "cells": [
+            {
+              "label": "Design system delivery",
+              "description": "Scalable component library ready for handoff"
+            },
+            {
+              "label": "Always included",
+              "description": "Tokens, components, and documentation as standard"
+            },
+            {
+              "label": "Varies",
+              "description": "Quality depends on the team assigned"
+            },
+            {
+              "label": "Unlikely",
+              "description": "Adds time and complexity most freelancers avoid"
+            }
+          ]
+        },
+        {
+          "cells": [
+            {
+              "label": "Full-stack engineering",
+              "description": "Frontend, backend, infrastructure, and QA"
+            },
+            {
+              "label": "End to end",
+              "description": "One team across the full stack, no handoffs"
+            },
+            {
+              "label": "Often split",
+              "description": "Design and engineering may be separate teams"
+            },
+            {
+              "label": "Specialised only",
+              "description": "A single person rarely covers the full stack"
+            }
+          ]
+        },
+        {
+          "cells": [
+            {
+              "label": "Single point of contact",
+              "description": "One lead accountable for the full engagement"
+            },
+            {
+              "label": "Always",
+              "description": "A dedicated product lead owns delivery end to end"
+            },
+            {
+              "label": "Sometimes",
+              "description": "Account managers often sit between you and the team"
+            },
+            {
+              "label": "Yes",
+              "description": "But also the only person — no backup or escalation path"
+            }
+          ]
+        },
+        {
+          "cells": [
+            {
+              "label": "Post-launch continuity",
+              "description": "Support, iteration, and ownership after go-live"
+            },
+            {
+              "label": "Included",
+              "description": "We stay on for a post-launch period and long-term retainers"
+            },
+            {
+              "label": "Extra cost",
+              "description": "Usually requires a separate retainer agreement"
+            },
+            {
+              "label": "Uncertain",
+              "description": "Availability after delivery is never guaranteed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "template": "table",
+      "label": "What's included",
+      "headline": "Everything you need, nothing you don't.",
+      "body": "A fixed-scope engagement with no surprises. Every deliverable is defined upfront and signed off before work begins.",
+      "headerColumn": true,
+      "columns": [
+        { "label": "Deliverable" },
+        { "label": "Included", "accent": "emerald" }
+      ],
+      "rows": [
+        {
+          "cells": [
+            { "label": "Product strategy & roadmap" },
+            {
+              "label": "Yes",
+              "description": "Structured discovery workshop and a prioritised feature roadmap"
+            }
+          ]
+        },
+        {
+          "cells": [
+            { "label": "UX research & user interviews" },
+            {
+              "label": "Yes",
+              "description": "3 rounds of user interviews with synthesis and insight report"
+            }
+          ]
+        },
+        {
+          "cells": [
+            { "label": "High-fidelity UI design" },
+            {
+              "label": "Yes",
+              "description": "Fully resolved screens for all core flows, desktop and mobile"
+            }
+          ]
+        },
+        {
+          "cells": [
+            { "label": "Design system" },
+            {
+              "label": "Yes",
+              "description": "Component library with tokens and documentation, ready for handoff"
+            }
+          ]
+        },
+        {
+          "cells": [
+            { "label": "Frontend & backend development" },
+            {
+              "label": "Yes",
+              "description": "Production-ready code across the full stack, no handoffs"
+            }
+          ]
+        },
+        {
+          "cells": [
+            { "label": "Post-launch support" },
+            {
+              "label": "4 weeks",
+              "description": "Dedicated support window after go-live to address any issues"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "template": "tabs",
+      "label": "Scope of work",
+      "headline": "What we will build.",
+      "tabs": [
+        {
+          "sublabel": "Phase 1",
+          "label": "Discovery",
+          "body": [
+            "We start every engagement by building a shared understanding of the problem. Through structured workshops, stakeholder interviews and a technical audit, we define the product vision, identify constraints and align on what success looks like.",
+            "This phase is the foundation everything else is built on. Getting it right means the rest of the project moves faster, with fewer surprises and a team that is genuinely aligned on what matters."
+          ],
+          "deliverables": [
+            {
+              "label": "Stakeholder interviews",
+              "description": "Structured sessions to align on goals and constraints."
+            },
+            {
+              "label": "Technical audit",
+              "description": "Assessment of existing systems and integration requirements."
+            },
+            {
+              "label": "Product roadmap",
+              "description": "Prioritised feature list with success metrics defined."
+            }
+          ],
+          "team": [
+            {
+              "role": "Strategist",
+              "description": "Facilitates workshops and defines the product roadmap."
+            },
+            {
+              "role": "UX Researcher",
+              "description": "Conducts interviews and synthesises findings."
+            }
+          ]
+        },
+        {
+          "sublabel": "Phase 2",
+          "label": "Design",
+          "body": [
+            "Design is where the product takes shape. We move from rough concepts to a fully resolved interface — information architecture, interaction design, visual language and a component system that scales. Every decision is grounded in user needs and validated through iteration.",
+            "You will see and respond to real work throughout, not at the end. We share progress weekly, incorporate feedback continuously, and make sure nothing ships that has not been reviewed and approved by your team."
+          ],
+          "deliverables": [
+            {
+              "label": "Information architecture",
+              "description": "Sitemap, user flows and navigation structure."
+            },
+            {
+              "label": "High-fidelity UI",
+              "description": "Fully resolved screens for all core flows."
+            },
+            {
+              "label": "Design system",
+              "description": "Component library with tokens, ready for handoff."
+            },
+            {
+              "label": "Prototype",
+              "description": "Interactive clickable prototype for stakeholder review."
+            }
+          ],
+          "team": [
+            {
+              "role": "Product Designer",
+              "description": "Leads visual design, UI and the design system."
+            },
+            {
+              "role": "UX Designer",
+              "description": "Owns information architecture and interaction design."
+            }
+          ]
+        },
+        {
+          "sublabel": "Phase 3",
+          "label": "Development",
+          "body": [
+            "We build in short cycles, shipping working software every week. Design and engineering operate in the same loop — no handoff, no silos. The codebase is production-ready from day one: tested, documented and built to last.",
+            "We integrate with your existing systems and keep you in the loop at every step. Every sprint ends with a demo, and every decision is documented so you always understand what was built and why."
+          ],
+          "deliverables": [
+            {
+              "label": "Frontend",
+              "description": "Production-ready UI built against the design system."
+            },
+            {
+              "label": "Backend & API",
+              "description": "Server-side logic, database and third-party integrations."
+            },
+            {
+              "label": "QA & testing",
+              "description": "End-to-end test suite covering critical paths."
+            }
+          ],
+          "team": [
+            {
+              "role": "Frontend Engineer",
+              "description": "Builds the UI layer and integrates with APIs."
+            },
+            {
+              "role": "Backend Engineer",
+              "description": "Architects and implements the server-side logic."
+            },
+            {
+              "role": "QA Engineer",
+              "description": "Defines test plans and ensures quality at every step."
+            }
+          ]
+        },
+        {
+          "sublabel": "Phase 4",
+          "label": "Launch",
+          "body": [
+            "Launch is not the end — it is the beginning of the product's life. We manage the full deployment, set up monitoring and alerts, and make sure your team is confident operating what we have built together.",
+            "After go-live, we remain available for a period of post-launch support to address anything that comes up. We treat launch not as the end of the engagement but as the start of the product's life in the real world."
+          ],
+          "deliverables": [
+            {
+              "label": "Deployment",
+              "description": "Production environment setup with CI/CD pipeline."
+            },
+            {
+              "label": "Monitoring",
+              "description": "Error tracking, uptime alerts and performance dashboards."
+            },
+            {
+              "label": "Documentation",
+              "description": "Technical and user-facing documentation for the team."
+            }
+          ],
+          "team": [
+            {
+              "role": "DevOps Engineer",
+              "description": "Manages deployment pipelines and infrastructure."
+            },
+            {
+              "role": "Product Lead",
+              "description": "Coordinates handoff, training and post-launch support."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "template": "timeline",
+      "label": "Our process",
+      "headline": "How we work.",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "total": "14",
+      "phases": [
+        { "label": "Discovery", "duration": 2, "offset": 0 },
+        { "label": "Design", "duration": 5, "offset": 1 },
+        { "label": "Development", "duration": 9, "offset": 4 },
+        { "label": "Delivery and launch", "duration": 2, "offset": 12 }
+      ],
+      "unit": "weeks",
+      "startDate": "January 2025",
+      "endDate": "April 2025"
+    },
+    {
+      "template": "budget",
+      "label": "Investment",
+      "headline": "What this project costs.",
+      "body": "A clear breakdown of where every euro goes — by phase, by discipline.",
+      "total": "120.000€",
+      "totalBudget": 120000,
+      "currency": "€",
+      "phases": [
+        { "label": "Discovery", "amount": 15000 },
+        { "label": "Design", "amount": 30000 },
+        { "label": "Development", "amount": 60000 },
+        { "label": "QA & Launch", "amount": 15000 }
+      ]
+    },
+    {
+      "template": "payment",
+      "label": "Installments model",
+      "headline": "How we charge.",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "totalBudget": 150000,
+      "currency": "€",
+      "paymentTerms": "Monthly invoices issued on the 1st of each month, due within 14 days.",
+      "projectDuration": 4,
+      "payments": [
+        {
+          "label": "Upfront",
+          "amount": "20%",
+          "description": "Project kicks off once this payment is received."
+        },
+        {
+          "label": "Monthly installments",
+          "amount": "80%",
+          "split": 4,
+          "description": "Equal monthly payments over the project duration. First invoice on project start date. 30.000€ per month, billed equally over 4 months."
+        }
+      ]
+    },
+    {
+      "template": "team",
+      "label": "An incredible team",
+      "headline": "Meet the team.",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "members": [
+        {
+          "name": "Rui Sereno",
+          "role": "CEO",
+          "bio": "Product-first founder with 12 years building digital companies.",
+          "photo": "https://images.unsplash.com/photo-1592700819903-308f4820372d?w=400&h=500&fit=crop&crop=face&q=80"
+        },
+        {
+          "name": "Member Name",
+          "role": "Design Lead",
+          "bio": "Lorem ipsum dolor sit amet.",
+          "photo": "https://images.unsplash.com/photo-1674941542427-15cee807f59d?w=400&h=500&fit=crop&crop=face&q=80"
+        },
+        {
+          "name": "Member Name",
+          "role": "Tech Lead",
+          "bio": "Lorem ipsum dolor sit amet.",
+          "photo": "https://images.unsplash.com/photo-1720022785516-9653ead7180c?w=400&h=500&fit=crop&crop=face&q=80"
+        },
+        {
+          "name": "Member Name",
+          "role": "Product Manager",
+          "bio": "Lorem ipsum dolor sit amet.",
+          "photo": "https://images.unsplash.com/photo-1505274664176-44ccaa7969a8?w=400&h=500&fit=crop&crop=face&q=80"
+        },
+        {
+          "name": "Member Name",
+          "role": "Product Designer",
+          "bio": "Lorem ipsum dolor sit amet.",
+          "photo": "https://images.unsplash.com/photo-1544502062-f82887f03d1c?w=400&h=500&fit=crop&crop=face&q=80"
+        }
+      ]
+    },
+    {
+      "template": "payment",
+      "label": "Milestone model",
+      "headline": "How we charge.",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "totalBudget": 150000,
+      "currency": "€",
+      "paymentTerms": "Invoices are due within 14 days of issue. Late payments incur a 2% monthly fee.",
+      "projectDuration": 4,
+      "payments": [
+        {
+          "label": "Upfront",
+          "amount": "20%",
+          "description": "Project kicks off once this payment is received."
+        },
+        {
+          "label": "Design sign-off",
+          "amount": "30%",
+          "description": "Due before development begins. Unlocks engineering resources."
+        },
+        {
+          "label": "Development complete",
+          "amount": "30%",
+          "description": "Due upon design sign-off and before launch activities start."
+        },
+        {
+          "label": "Final delivery",
+          "amount": "20%",
+          "description": "Final invoice issued on delivery of all agreed deliverables."
+        }
+      ]
+    },
+    {
+      "template": "waffle",
+      "sentiment": "negative",
+      "label": "The real odds",
+      "headline": "Most digital products don't survive.",
+      "body": "Building something is the easy part. Most products ship, get used briefly, and quietly disappear. The ones that don't are built differently — with more rigour, sharper focus, and the right partner from day one.",
+      "segments": [
+        {
+          "value": "4 in 100 survive",
+          "fill": 4,
+          "label": "Still actively used 2 years after launch"
+        },
+        {
+          "value": "2 in 100 deliver",
+          "fill": 2,
+          "label": "On time, on scope, and within budget"
+        }
+      ],
+      "emptyLabel": "Abandoned, over budget, or never reached scale"
+    },
+    {
+      "template": "treemap",
+      "label": "Revenue breakdown",
+      "headline": "Where the money comes from.",
+      "body": "Four lines, one clear leader. Understanding the shape of revenue tells you where to invest next.",
+      "segments": [
+        {
+          "value": "38%",
+          "fill": 38,
+          "label": "SaaS subscriptions",
+          "description": "Annual and monthly recurring contracts"
+        },
+        {
+          "value": "22%",
+          "fill": 22,
+          "label": "Professional services",
+          "description": "Implementation, onboarding, and consulting"
+        },
+        {
+          "value": "19%",
+          "fill": 19,
+          "label": "Licensing",
+          "description": "White-label and API access fees"
+        },
+        {
+          "value": "12%",
+          "fill": 12,
+          "label": "Support & maintenance",
+          "description": "Ongoing SLAs and dedicated support tiers"
+        },
+        {
+          "value": "5%",
+          "fill": 5,
+          "label": "Partnerships",
+          "description": "Revenue share from referral agreements"
+        },
+        {
+          "value": "4%",
+          "fill": 4,
+          "label": "Training",
+          "description": "Paid onboarding and certification programmes"
+        }
+      ]
+    },
+    {
+      "template": "bar",
+      "label": "Our track record",
+      "headline": "Clients that come back.",
+      "body": "We measure the quality of our work not just by what ships, but by whether clients want to come back. Over seven years and dozens of engagements, the answer has been the same.",
+      "value": "96%",
+      "valueTitle": "458 of 478 projects delivered on time",
+      "valueLabel": "Every engagement since 2018, delivered on or ahead of the agreed deadline.",
+      "fill": 96,
+      "color": "emerald"
+    },
+    {
+      "template": "showcase",
+      "label": "Previous work",
+      "headline": "Redesigning finance for 2 million users.",
+      "body": "We partnered with a European neobank to overhaul their mobile experience — from information architecture through to a fully shipped design system and production app.",
+      "metrics": [
+        {
+          "label": "App store rating",
+          "value": "4.9",
+          "trend": "up",
+          "trendValue": "0.6 pts"
+        },
+        {
+          "label": "User activation rate",
+          "value": "38%",
+          "trend": "up",
+          "trendValue": "vs. before"
+        },
+        { "label": "Time to ship", "value": "16 wks" },
+        {
+          "label": "NPS after launch",
+          "value": "72",
+          "trend": "up",
+          "trendValue": "24 pts"
+        }
+      ],
+      "media": [
+        "https://cdn.significa.co/website/projects/mishmash/download-1-97J4zs.webp",
+        "https://cdn.significa.co/website/projects/mishmash/mishmash-website-cover-GKU6Zl.jpg",
+        "https://cdn.significa.co/website/projects/mishmash/mishmash_thumb_1-sxXLeD.png"
+      ]
+    },
+    {
+      "template": "payment",
+      "label": "Mixed model",
+      "headline": "How we charge.",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "totalBudget": 150000,
+      "currency": "€",
+      "paymentTerms": "Invoices are due within 14 days of issue. All payments via bank transfer.",
+      "projectDuration": 4,
+      "payments": [
+        {
+          "label": "Upfront",
+          "amount": "20%",
+          "description": "Project kicks off once this payment is received."
+        },
+        {
+          "label": "Monthly installments",
+          "amount": "60%",
+          "split": 3,
+          "description": "Equal monthly payments billed on the 1st of each month. 22.500€ per month, billed equally over 4 months."
+        },
+        {
+          "label": "Final delivery",
+          "amount": "20%",
+          "description": "Final invoice issued on delivery and sign-off of all deliverables."
+        }
+      ]
+    },
+    {
+      "template": "end",
+      "headline": "Excited to build something great together.",
+      "body": "Questions, changes, or ready to start — reach us at hello@significa.co.",
+      "client": {
+        "name": "Super Bock",
+        "logo": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path fill=\"#FFF\" d=\"M12 .003C5.37.003.003 5.37.003 12S5.37 23.997 12 23.997 23.997 18.63 23.997 12C23.997 5.369 18.63.003 12 .003z\"></path><path fill=\"#005992\" d=\"M20.826 6.3c.206.693.335 1.412.335 2.156 0 2.439-1.21 4.57-3.037 5.93-3.165 2.336-7.798 2.336-14.18 4.339a10.448 10.448 0 0 0 8.055 3.774c5.816 0 10.5-4.698 10.5-10.474 0-2.131-.618-4.082-1.673-5.725z\"></path><path fill=\"#ED1A38\" d=\"M18.304 3.604a10.513 10.513 0 0 0-6.305-2.105c-5.816 0-10.5 4.698-10.5 10.5 0 2.336.772 4.493 2.059 6.213 7.051-2.054 12.636-7.574 14.746-14.608z\"></path></svg>",
+        "color": "red"
+      },
+      "sharedDate": "9 June 2026",
+      "partner": "Rui Sereno"
+    }
+  ]
+}

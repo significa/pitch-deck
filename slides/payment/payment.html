@@ -1,0 +1,31 @@
+<section class="slide" data-slide-type="payment">
+    <div class="slide-header">{{> slide-header}}</div>
+    <div class="payment__wrapper" style="grid-template-rows: {{gridRows}}">
+        {{#each payments}}
+        <div
+            class="payment__item"
+            style="--reveal-delay: {{revealDelay}}ms; --reveal-duration: {{revealDuration}}ms; --text-delay: {{textDelay}}ms; --item-color: {{itemColor}};"
+        >
+            <div>
+                <p class="payment__item-amount">{{amount}}</p>
+                <p class="content__label payment__item-label">{{labelLine}}</p>
+            </div>
+            <div class="payment__item-description">
+                {{#if description}}
+                <p class="payment__item-description-text">{{description}}</p>
+                {{/if}}
+            </div>
+            {{#if installments}}
+            <div
+                class="payment__installments"
+                style="grid-template-rows: {{installmentRows}}"
+            >
+                {{#each installments}}
+                <div class="payment__installment"></div>
+                {{/each}}
+            </div>
+            {{/if}}
+        </div>
+        {{/each}}
+    </div>
+</section>

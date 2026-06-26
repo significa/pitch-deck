@@ -1,0 +1,150 @@
+[data-slide-type="cover"] {
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* ── Header ───────────────────────────────────────────────────────────────── */
+
+.cover__headline {
+    max-width: 380px;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: -1px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cover__body {
+    max-width: 380px;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: -1px;
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* ── Footer ───────────────────────────────────────────────────────────────── */
+
+.cover__footer {
+    display: flex;
+    gap: 48px;
+    width: 100%;
+}
+
+.cover__footer-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cover__footer-field .content__label {
+    color: rgba(255, 255, 255, 0.56);
+}
+
+p.cover__footer-value {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: -0.2px;
+    margin-top: 2px;
+}
+
+/* ── Layout ─────────────────────────────────────────────────────────────── */
+
+.half {
+    max-width: 50%;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #1c1814;
+}
+
+.half--left {
+    align-items: flex-end;
+}
+
+.half__content {
+    max-width: 400px;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo__wrapper {
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.logo__container {
+    display: flex;
+}
+
+.logo__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo__inner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.4' numOctaves='4' stitchTiles='stitch' result='noise'/%3E%3CfeColorMatrix in='noise' type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 12 -5' result='contrast'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 200px 200px;
+    mix-blend-mode: overlay;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.cover__brand-logo {
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.cover__brand-logo--svg {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.cover__brand-logo--significa {
+    opacity: 0.48;
+}
+
+.cover__brand-logo--svg svg {
+    width: 100%;
+    height: 100%;
+}
+
+.cover__brand-fallback {
+    width: 100%;
+    height: 100%;
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 78px;
+    color: rgba(255, 255, 255, 0.32);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

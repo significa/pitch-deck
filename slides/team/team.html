@@ -1,0 +1,50 @@
+<section class="slide" data-slide-type="team">
+    <div class="slide-header">{{> slide-header}}</div>
+    <div class="team" data-stagger>
+        <div class="team__item team__item--brand">
+            <div class="team__item-content">
+                <div><p class="team__member-name">Significa</p></div>
+                <p>Think. Design. Develop. Launch. Repeat.</p>
+            </div>
+            <div class="team__mark">
+                <svg
+                    class="team__logo"
+                    width="24"
+                    height="29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M12 27.887c-6.39 0-11.59-5.04-11.59-11.285C.41 9.563 6.005.614 12 .614c5.995 0 11.591 8.948 11.591 15.988 0 6.245-5.2 11.285-11.59 11.285Zm0-2.573c5.006 0 9.044-3.913 9.044-8.712 0-5.797-4.765-13.415-9.044-13.415-4.279 0-9.043 7.618-9.043 13.415 0 4.8 4.037 8.712 9.043 8.712Z"
+                        fill="currentColor"
+                    />
+                </svg>
+            </div>
+        </div>
+        {{#each members}}
+        <div class="team__item">
+            <div class="team__item-content">
+                <div>
+                    <p class="team__member-name">{{name}}</p>
+                    {{#if role}}
+                    <p class="team__member-role">{{role}}</p>
+                    {{/if}}
+                </div>
+                {{#if bio}}
+                <p>{{bio}}</p>
+                {{/if}}
+            </div>
+            <div class="team__photo">
+                {{#if photo}}
+                <img src="{{photo}}" alt="{{name}}" />
+                {{/if}}
+                {{#if photoMissing}}
+                <div class="media-placeholder">
+                    <p class="media-placeholder__label">team photo</p>
+                </div>
+                {{/if}}
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</section>

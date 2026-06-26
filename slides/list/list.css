@@ -1,0 +1,145 @@
+[data-slide-type="list"] {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+[data-slide-type="list"] .slide-left--list {
+    border-right: none;
+}
+
+/* ── Items panel ─────────────────────────────────────────────────────────────── */
+
+.list__items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-width: 50%;
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+}
+.list__items--no-value {
+    max-width: 570px;
+}
+
+.list__item {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    opacity: 0;
+    transform: translateX(24px);
+    min-height: calc(100% / 6);
+}
+
+[data-active] .list__item {
+    animation: list-item-in 360ms cubic-bezier(0.05, 0.7, 0.1, 1) both;
+    animation-delay: var(--item-delay, 0ms);
+}
+
+@keyframes list-item-in {
+    from {
+        opacity: 0;
+        transform: translateX(32px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ── Value ───────────────────────────────────────────────────────────────────── */
+
+.list__value {
+    font-size: 100px;
+    line-height: 80px;
+    font-weight: 500;
+    letter-spacing: -5px;
+    min-width: 280px;
+}
+
+/* ── Text ────────────────────────────────────────────────────────────────────── */
+
+.list__text {
+    display: flex;
+    flex-direction: column;
+    max-width: 460px;
+    margin-top: -6px;
+}
+
+.list__heading {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.88);
+}
+
+p.list__body {
+    opacity: 0.72;
+    margin-top: 4px;
+    line-height: 24px;
+}
+
+/* ── Highlighted item ────────────────────────────────────────────────────────── */
+
+/* Background on the element itself so it extends under the border (matches payment) */
+.list__item--highlighted {
+    opacity: 1;
+    transform: none;
+    background: var(--item-color);
+    clip-path: inset(0 100% 0 0);
+}
+
+[data-active] .list__item--highlighted {
+    animation: list-bg-fill 500ms cubic-bezier(0.05, 0.7, 0.1, 1) both;
+    animation-delay: var(--item-delay, 0ms);
+}
+
+@keyframes list-bg-fill {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0% 0 0);
+    }
+}
+
+/* Grain texture */
+.list__item--highlighted::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.4' numOctaves='4' stitchTiles='stitch' result='noise'/%3E%3CfeColorMatrix in='noise' type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 12 -5' result='contrast'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 200px 200px;
+    mix-blend-mode: overlay;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+/* Text: white, starts hidden, slides in after fill completes */
+.list__item--highlighted .list__value,
+.list__item--highlighted .list__heading,
+.list__item--highlighted p.list__body {
+    position: relative;
+    z-index: 1;
+    color: white;
+    opacity: 0;
+}
+
+[data-active] .list__item--highlighted .list__value,
+[data-active] .list__item--highlighted .list__heading,
+[data-active] .list__item--highlighted p.list__body {
+    animation: list-text-in 200ms cubic-bezier(0.05, 0.7, 0.1, 1) both;
+    animation-delay: var(--bg-delay, 0ms);
+}
+
+@keyframes list-text-in {
+    from {
+        opacity: 0;
+        transform: translateX(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

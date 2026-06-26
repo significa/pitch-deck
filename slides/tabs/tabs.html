@@ -1,0 +1,83 @@
+<section class="slide" data-slide-type="tabs" data-tabs>
+    <div class="slide-left">
+        <div class="slide-header">{{> slide-header}}</div>
+        <div class="tabs__triggers">
+            {{#each tabs}}
+            <button
+                class="tabs__trigger"
+                data-tab-trigger
+                style="--item-color: {{itemColor}};"
+            >
+                <div class="tabs__trigger-bg"></div>
+                <div class="tabs__trigger-text">
+                    <p class="content__label tabs__trigger-text-label">
+                        {{sublabel}}
+                    </p>
+                    <h3>{{label}}</h3>
+                </div>
+                <div
+                    class="tabs__trigger-text tabs__trigger-text--white"
+                    aria-hidden="true"
+                >
+                    <p class="content__label">{{sublabel}}</p>
+                    <h3>{{label}}</h3>
+                </div>
+            </button>
+            {{/each}}
+        </div>
+    </div>
+    <div class="tabs__panels">
+        {{#each tabs}}
+        <div
+            class="tabs__panel"
+            data-tab-panel
+            style="--item-color: {{itemColor}};"
+        >
+            <div class="tabs__panel-content">
+                {{#if body}}
+                <div>
+                    {{#each body}}
+                    <p class="tabs__body">{{this}}</p>
+                    {{/each}}
+                </div>
+                {{/if}}
+                <div class="tabs__list-wrapper">
+                    {{#if deliverables}}
+                    <div class="tabs__list">
+                        <p class="content__label tabs__list-heading">
+                            Deliverables
+                        </p>
+                        <div class="tabs__items">
+                            {{#each deliverables}}
+                            <div class="tabs__item">
+                                <p class="tabs__item-label">{{label}}</p>
+                                {{#if description}}
+                                <p class="tabs__item-description">
+                                    {{description}}
+                                </p>
+                                {{/if}}
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                    {{/if}} {{#if team}}
+                    <div class="tabs__list">
+                        <p class="content__label tabs__list-heading">Team</p>
+                        <div class="tabs__items">
+                            {{#each team}}
+                            <div class="tabs__item">
+                                <p class="tabs__item-label">{{role}}</p>
+                                <p class="tabs__item-description">
+                                    {{description}}
+                                </p>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</section>

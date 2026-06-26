@@ -1,0 +1,86 @@
+[data-slide-type="end"] {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.end__headline {
+    max-width: 380px;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: -1px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.end__body {
+    max-width: 380px;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: -1px;
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.end__footer {
+    display: flex;
+    gap: 48px;
+    width: 100%;
+}
+
+.end__footer-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.end__footer-field .content__label {
+    color: rgba(255, 255, 255, 0.32);
+}
+
+.end__footer-value {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: -0.2px;
+    margin-top: 2px;
+}
+
+.end__brand-logo {
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.end__brand-logo--svg {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.end__brand-logo--svg svg {
+    width: 100%;
+    height: 100%;
+}
+
+.end__brand-logo--significa {
+    opacity: 0.48;
+}
+
+.end__brand-fallback {
+    width: 100%;
+    height: 100%;
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 78px;
+    color: rgba(255, 255, 255, 0.32);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

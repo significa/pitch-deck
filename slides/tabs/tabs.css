@@ -1,0 +1,168 @@
+[data-slide-type="tabs"] {
+    flex-direction: row;
+}
+
+.tabs__triggers {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+.tabs__trigger {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    appearence: none;
+    padding: 0 32px;
+    font-family: inherit;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    text-align: left;
+    height: 110px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.tabs__trigger-text {
+    position: absolute;
+    inset: 0;
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.tabs__trigger-text-label {
+    opacity: 0.48;
+}
+
+.tabs__trigger-text--white {
+    color: white;
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path 500ms cubic-bezier(0.05, 0.7, 0.1, 1);
+    z-index: 3;
+}
+
+/* The animated color block — now a real div, fully JS-controllable */
+.tabs__trigger-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: var(--item-color);
+    transition: width 900ms cubic-bezier(0.05, 0.7, 0.1, 1);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Hover: grow to 50% with slanted right edge */
+.tabs__trigger:hover .tabs__trigger-bg {
+    width: 50%;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 24px) 100%, 0 100%);
+}
+.tabs__trigger:hover .tabs__trigger-text--white {
+    clip-path: inset(0 60% 0 0);
+}
+
+/* Active */
+.tabs__trigger[data-active] .tabs__trigger-bg {
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: width 900ms cubic-bezier(0.05, 0.7, 0.1, 1), clip-path 0ms;
+}
+.tabs__trigger[data-active] .tabs__trigger-text--white {
+    clip-path: inset(0 0% 0 0);
+}
+
+/* Grain on hover and active */
+.tabs__trigger:hover .tabs__trigger-bg::after,
+.tabs__trigger[data-active] .tabs__trigger-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.4' numOctaves='4' stitchTiles='stitch' result='noise'/%3E%3CfeColorMatrix in='noise' type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 12 -5' result='contrast'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 200px 200px;
+    mix-blend-mode: overlay;
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.tabs__panels {
+    flex: 1;
+    overflow: hidden;
+}
+
+.tabs__panel {
+    display: none;
+    height: 100%;
+}
+
+.tabs__panel[data-active] {
+    display: flex;
+}
+
+.tabs__panel-content {
+    flex: 1;
+    padding: 40px 48px;
+    overflow-y: auto;
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    background: color-mix(in srgb, var(--item-color) 3%, transparent);
+    justify-content: space-between;
+}
+
+.tabs__body {
+    max-width: 600px;
+}
+
+.tabs__list {
+    width: 50%;
+    flex: 1;
+}
+
+.tabs__list-wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+.tabs__list-heading {
+    margin-bottom: 16px;
+    opacity: 0.48;
+}
+
+.tabs__items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs__item {
+    padding-left: 16px;
+    position: relative;
+    font-size: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 16px 0;
+}
+
+.tabs__item:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.tabs__item-label {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.tabs__item-description {
+    font-size: 15px;
+    line-height: 20px;
+    opacity: 0.48;
+    margin-top: 4px;
+}

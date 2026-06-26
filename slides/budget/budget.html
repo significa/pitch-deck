@@ -1,0 +1,19 @@
+<section class="slide" data-slide-type="budget">
+    <div class="slide-header">{{> slide-header}}</div>
+    <div class="budget__phases" style="--total-delay: {{totalDelay}}ms;">
+        {{#each phases}}
+        <div
+            class="budget__phase"
+            style="flex: {{flexGrow}}; --item-color: {{itemColor}}; --bar-delay: {{barDelay}}ms; --info-delay: {{infoDelay}}ms;"
+        >
+            <div class="budget__phase-bar">
+                <div class="budget__phase-info">
+                    <p class="content__label budget__phase-name">{{label}}</p>
+                    <p class="budget__phase-amount">{{calculatedAmount}}</p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+        <p class="budget__total-amount display-number">{{total}}</p>
+    </div>
+</section>

@@ -1,0 +1,20 @@
+<section class="slide" data-slide-type="list">
+    <div class="slide-left slide-left--list">
+        <div class="slide-header">{{> slide-header}}</div>
+    </div>
+    <div class="list__items{{#if noValues}} list__items--no-value{{/if}}">
+        {{#each items}}
+        <div class="list__item{{#if isHighlighted}} list__item--highlighted{{/if}}" style="--item-delay: {{delay}}ms;{{#if isHighlighted}} --item-color: {{itemColor}}; --bg-delay: {{bgDelay}}ms;{{/if}}">
+            {{#if value}}
+            <p class="list__value">{{value}}</p>
+            {{/if}}
+            <div class="list__text">
+                <p class="list__heading">{{heading}}</p>
+                {{#if body}}
+                <p class="list__body">{{body}}</p>
+                {{/if}}
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</section>

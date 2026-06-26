@@ -1,0 +1,40 @@
+<section class="slide" data-slide-type="table"{{#if twoColumn}} data-layout="two-col"{{/if}}>
+    <div class="table__header">
+        <div class="slide-header">{{> slide-header}}</div>
+    </div>
+    <div class="table__grid">
+        <table class="table__table">
+            {{#if columns}}
+            <thead>
+                <tr class="table__head-row">
+                    {{#each columns}}
+                    <th
+                        class="table__th{{#if hasAccent}} table__th--accent{{/if}}"
+                        style="width: {{width}}%;{{#if highlightColor}} --highlight-color: {{highlightColor}};{{/if}}"
+                    >
+                        <span class="content__label">{{label}}</span>
+                    </th>
+                    {{/each}}
+                </tr>
+            </thead>
+            {{/if}}
+            <tbody>
+                {{#each rows}}
+                <tr class="table__row">
+                    {{#each cells}}
+                    <td
+                        class="table__td{{#if isHeader}} table__td--header{{/if}}{{#if highlight}} table__td--highlight{{/if}}"
+                        style="{{#if highlightColor}}--highlight-color: {{highlightColor}};{{/if}}"
+                    >
+                        <p class="table__cell-label">{{label}}</p>
+                        {{#if description}}
+                        <p class="table__cell-description">{{description}}</p>
+                        {{/if}}
+                    </td>
+                    {{/each}}
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</section>
