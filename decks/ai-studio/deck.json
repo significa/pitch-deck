@@ -153,22 +153,23 @@
       "template": "table",
       "label": "Pricing",
       "headline": "Pick the volume, not the features.",
-      "body": "Every plan includes the entire product, today and everything we add later, with copy and hands-on onboarding always included. The only thing that ever changes is how many images you make. Pick monthly or yearly billing, and the bigger your plan, the less every image costs. Start free with 15 a month, then go beyond your plan any time at the usage rate. One credit is one image, and 4K counts as two. Need more than 2,500 a month? Enterprise is built for you.",
+      "body": "Every plan includes the entire product, today and everything we add later, with copy and hands-on onboarding always included. The only thing that ever changes is how many images you make. Pick monthly or yearly billing, and the bigger your plan, the less every image costs. Go beyond your plan any time at the usage rate. One credit is one image, and 4K counts as two. Need more than 2,500 a month? Enterprise is built for you.",
       "headerColumn": true,
       "columns": [
         { "label": "—" },
         { "label": "Starter" },
         { "label": "Growth", "accent": "emerald" },
-        { "label": "Scale" }
+        { "label": "Scale" },
+        { "label": "Enterprise" }
       ],
       "rows": [
-        { "cells": [ { "label": "Monthly" }, { "label": "59€", "description": "/mo, billed monthly" }, { "label": "239€", "description": "/mo, billed monthly" }, { "label": "719€", "description": "/mo, billed monthly" } ] },
-        { "cells": [ { "label": "Yearly" }, { "label": "49€", "description": "/mo, billed yearly" }, { "label": "199€", "description": "/mo, billed yearly" }, { "label": "599€", "description": "/mo, billed yearly" } ] },
-        { "cells": [ { "label": "Images / month" }, { "label": "150" }, { "label": "750" }, { "label": "2.500" } ] },
-        { "cells": [ { "label": "In 4K" }, { "label": "75" }, { "label": "375" }, { "label": "1.250" } ] },
-        { "cells": [ { "label": "Copy generation" }, { "label": "Included" }, { "label": "Included" }, { "label": "Included" } ] },
-        { "cells": [ { "label": "Onboarding & setup" }, { "label": "Included" }, { "label": "Included" }, { "label": "Included" } ] },
-        { "cells": [ { "label": "Extra usage (2K / 4K)" }, { "label": "0,40€ / 0,80€" }, { "label": "0,40€ / 0,80€" }, { "label": "0,40€ / 0,80€" } ] }
+        { "cells": [ { "label": "Monthly" }, { "label": "59€", "description": "/mo, billed monthly" }, { "label": "239€", "description": "/mo, billed monthly" }, { "label": "719€", "description": "/mo, billed monthly" }, { "label": "Custom" } ] },
+        { "cells": [ { "label": "Yearly" }, { "label": "49€", "description": "/mo, billed yearly" }, { "label": "199€", "description": "/mo, billed yearly" }, { "label": "599€", "description": "/mo, billed yearly" }, { "label": "Custom" } ] },
+        { "cells": [ { "label": "Images / month" }, { "label": "150" }, { "label": "750" }, { "label": "2.500" }, { "label": "2.500+" } ] },
+        { "cells": [ { "label": "In 4K" }, { "label": "75" }, { "label": "375" }, { "label": "1.250" }, { "label": "Custom" } ] },
+        { "cells": [ { "label": "Copy generation" }, { "label": "Included" }, { "label": "Included" }, { "label": "Included" }, { "label": "Included" } ] },
+        { "cells": [ { "label": "Onboarding & setup" }, { "label": "Included" }, { "label": "Included" }, { "label": "Included" }, { "label": "Included" } ] },
+        { "cells": [ { "label": "Extra usage (2K / 4K)" }, { "label": "0,40€ / 0,80€" }, { "label": "0,40€ / 0,80€" }, { "label": "0,40€ / 0,80€" }, { "label": "Custom" } ] }
       ]
     },
     {
@@ -187,7 +188,7 @@
     {
       "template": "end",
       "headline": "Start generating.",
-      "body": "Create your first 15 images free, no card. Talk to us about Enterprise at significa.co.",
+      "body": "Talk to us about Enterprise at significa.co.",
       "client": {
         "name": "Significa AI Studio",
         "color": "rust"
