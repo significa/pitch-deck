@@ -5,7 +5,7 @@
       "headline": "Brand-grade product imagery, generated.",
       "body": "Your whole catalogue, shot in any scene, in 2K and 4K, without a studio.",
       "client": {
-        "name": "Significa AI Studio",
+        "name": "Unphoto",
         "color": "rust"
       },
       "sharedDate": "June 2026",
@@ -165,8 +165,7 @@
       "rows": [
         { "cells": [ { "label": "Monthly" }, { "label": "59€", "description": "/mo, billed monthly" }, { "label": "239€", "description": "/mo, billed monthly" }, { "label": "719€", "description": "/mo, billed monthly" }, { "label": "Custom" } ] },
         { "cells": [ { "label": "Yearly" }, { "label": "49€", "description": "/mo, billed yearly" }, { "label": "199€", "description": "/mo, billed yearly" }, { "label": "599€", "description": "/mo, billed yearly" }, { "label": "Custom" } ] },
-        { "cells": [ { "label": "Images / month" }, { "label": "150" }, { "label": "750" }, { "label": "2.500" }, { "label": "2.500+" } ] },
-        { "cells": [ { "label": "In 4K" }, { "label": "75" }, { "label": "375" }, { "label": "1.250" }, { "label": "Custom" } ] },
+        { "cells": [ { "label": "Images / month" }, { "label": "150 (2K) / 75 (4K)" }, { "label": "750 (2K) / 375 (4K)" }, { "label": "2.500 (2K) / 1.250 (4K)" }, { "label": "Custom" } ] },
         { "cells": [ { "label": "Copy generation" }, { "label": "Included" }, { "label": "Included" }, { "label": "Included" }, { "label": "Included" } ] },
         { "cells": [ { "label": "Onboarding & setup" }, { "label": "Included" }, { "label": "Included" }, { "label": "Included" }, { "label": "Included" } ] },
         { "cells": [ { "label": "Extra usage (2K / 4K)" }, { "label": "0,40€ / 0,80€" }, { "label": "0,40€ / 0,80€" }, { "label": "0,40€ / 0,80€" }, { "label": "Custom" } ] }
@@ -190,7 +189,7 @@
       "headline": "Start generating.",
       "body": "Talk to us about Enterprise at significa.co.",
       "client": {
-        "name": "Significa AI Studio",
+        "name": "Unphoto",
         "color": "rust"
       },
       "sharedDate": "June 2026",
