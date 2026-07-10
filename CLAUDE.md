@@ -181,7 +181,9 @@ Both can be combined, used independently, or omitted for a fully flat table.
 
 If none of the above resolves, or if `logo` is absent or an empty string, the logo area shows the client name as a text fallback. A missing logo is a build WARNING, not an error.
 
-**`client.color`** accepts either a palette key (`rust`, `amber`, `emerald`, `sky`, `blue`, `violet`, `pink`, `red`) or a hex value (`#RGB` or `#RRGGBB`). Palette keys resolve to `var(--color-key)`; hex values are used directly.
+**`client.color`** accepts either a palette key (`rust`, `amber`, `emerald`, `sky`, `blue`, `violet`, `pink`, `red`) or a hex value (`#RGB` or `#RRGGBB`). Kept in the schema for per-deck CSS overrides but not used by the default template.
+
+**Layout:** single full-bleed dark panel (`#1c1814`). Client logo at top-left (40px tall, width auto). Headline and body in the middle. Footer (sharedDate + partner) at the bottom. No Significa mark.
 
 **When to use:** always, as the first slide of every deck. `cover` is a required bookend. A deck without it has no moment of arrival. One per deck, first position only.
 
@@ -194,14 +196,14 @@ If none of the above resolves, or if `logo` is absent or an empty string, the lo
   "client": {
     "name": "string",
     "logo": "string (inline SVG markup | URL | filename in assets/)",
-    "color": "string (#RGB, #RRGGBB, or palette key: the client's brand colour, fills their brand cell)"
+    "color": "string (#RGB, #RRGGBB, or palette key)"
   },
   "sharedDate": "string (e.g. \"9 June 2026\")",
   "partner": "string (the Significa team member presenting the deck)"
 }
 ```
 
-The closing slide of the deck. Identical layout to `cover` (two dark halves side by side, Significa mark in amber on the left, client logo on the right) but fully independent template files (`slides/end/`). Use it as the last slide with a farewell headline and contact copy. All `client.logo` and `client.color` rules from `cover` apply equally here, including the missing-logo warning and text fallback.
+The closing slide of the deck. Identical layout to `cover` — single dark panel, client logo at top, farewell headline and body in the middle, footer at the bottom. Independent template files (`slides/end/`). All `client.logo` rules from `cover` apply equally here, including the missing-logo warning and text fallback.
 
 **When to use:** always, as the last slide of every deck. `end` is a required bookend. Use a farewell headline ("Let's build it." / "Obrigado." / "Ready when you are.") and minimal body copy with a contact prompt. One per deck, last position only.
 
