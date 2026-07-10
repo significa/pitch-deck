@@ -1,0 +1,227 @@
+{
+  "slides": [
+    {
+      "template": "cover",
+      "headline": "Brand-grade product imagery, generated.",
+      "body": "Your whole catalogue, shot in any scene, in 2K and 4K, without a studio.",
+      "client": {
+        "name": "Unphoto",
+        "logo": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 117 12.97\"><path fill=\"currentColor\" d=\"M3.32.31v6.94q0 .69.12 1.25t.43.96.88.62 1.47.21q.68 0 1.42-.19a10 10 0 0 0 1.49-.5 11 11 0 0 0 1.39-.72q.67-.41 1.2-.85V.31h3.32v12.31h-3.31v-1.68l-1.34.72q-.71.36-1.5.66-.8.29-1.7.46-.9.19-1.89.19-1.25 0-2.23-.3t-1.66-.85q-.68-.56-1.05-1.33Q0 9.7 0 8.73V.31zm26.39 12.31v-6.9q0-.69-.12-1.24-.12-.56-.44-.96-.31-.4-.88-.62t-1.46-.22q-.68 0-1.44.19a10 10 0 0 0-1.48.48 11 11 0 0 0-1.4.71q-.66.4-1.18.84v7.72h-3.33V.31h3.33V2a25 25 0 0 1 1.33-.71q.71-.36 1.5-.65t1.7-.46T27.73 0q1.25 0 2.22.3.99.3 1.66.86.68.55 1.04 1.33.37.78.37 1.75v8.38zm20.03-8.11q0 .92-.27 1.71-.27.77-.87 1.33-.59.56-1.54.87t-2.31.31h-5.52v3.89h-3.32V.31h8.84q1.36 0 2.31.32.95.3 1.54.87.6.56.87 1.32t.27 1.69m-3.36.06q0-.43-.12-.74t-.4-.51-.72-.28q-.45-.1-1.11-.1h-4.8v3.17h4.8q.65 0 1.11-.07.45-.08.72-.26.28-.19.4-.49.13-.3.12-.72m16.98 8.05V7.49H54.9v5.13h-3.32V.31h3.32v4.48h8.46V.31h3.32v12.31zm22.18-6.14q0 1.58-.58 2.8t-1.67 2.02-2.63 1.24q-1.54.41-3.47.41t-3.48-.41-2.64-1.24-1.69-2.02q-.59-1.22-.59-2.8t.59-2.8 1.69-2.03T73.71.42Q75.27 0 77.19 0t3.47.42 2.63 1.23 1.67 2.03q.58 1.21.58 2.8m-3.36 0q0-.69-.22-1.37-.21-.69-.78-1.24-.56-.55-1.52-.89t-2.47-.34q-1 0-1.76.16-.76.15-1.32.43t-.93.66-.6.8a3 3 0 0 0-.32.88 5 5 0 0 0-.09.91q0 .46.09.92a4 4 0 0 0 .32.89q.22.42.6.79t.93.65q.56.27 1.32.43t1.76.15q1.5 0 2.47-.34t1.52-.89q.56-.55.78-1.22.22-.69.22-1.38m12.37-3.49v9.63h-3.32V2.99h-5.22V.31h13.77v2.68zm22.44 3.49q0 1.58-.58 2.8a5.5 5.5 0 0 1-1.66 2.03q-1.08.82-2.64 1.23-1.54.41-3.46.41c-1.93 0-2.45-.14-3.49-.41q-1.55-.42-2.64-1.23a5.5 5.5 0 0 1-1.69-2.03q-.59-1.22-.59-2.8t.59-2.8a5.5 5.5 0 0 1 1.69-2.03q1.09-.82 2.64-1.23 1.56-.42 3.49-.42c1.93 0 2.44.14 3.46.42q1.55.41 2.64 1.23a5.5 5.5 0 0 1 1.66 2.03q.58 1.21.58 2.8m-3.36 0q0-.69-.22-1.37a3 3 0 0 0-.78-1.24q-.56-.55-1.52-.89-.97-.34-2.46-.34-1 0-1.77.16a5 5 0 0 0-1.32.43 4 4 0 0 0-.93.66q-.38.37-.6.8a3 3 0 0 0-.32.88q-.09.46-.09.91 0 .46.09.92.1.47.32.9.22.42.6.78a4 4 0 0 0 .93.65 6 6 0 0 0 1.32.43 9 9 0 0 0 1.77.15q1.5 0 2.46-.34.97-.34 1.52-.89a3 3 0 0 0 .78-1.22q.22-.69.22-1.38\"/></svg>",
+        "color": "#ffffff"
+      },
+      "sharedDate": "June 2026",
+      "partner": "Significa"
+    },
+    {
+      "template": "list",
+      "label": "The grind",
+      "headline": "Product imagery is a relentless, expensive grind.",
+      "items": [
+        {
+          "heading": "The volume never stops",
+          "body": "Every SKU, season, campaign, and market wants its own shots, and it wants them now."
+        },
+        {
+          "heading": "Studios are slow and costly",
+          "body": "Weeks of lead time, samples shipped, models and locations booked, and a shoot-sized bill for every refresh."
+        },
+        {
+          "heading": "The cheap AI tools miss",
+          "body": "Fast, but off-brand, generic, and inconsistent from one image to the next."
+        },
+        {
+          "heading": "Every change is a reshoot",
+          "body": "A new colourway or a swapped prop means starting the whole thing over."
+        },
+        {
+          "heading": "Then you do it all by hand",
+          "body": "Resize, rename, and upload every finished file into your store yourself.",
+          "color": "rust"
+        }
+      ]
+    },
+    {
+      "template": "statement",
+      "variant": "center",
+      "label": "The real problem",
+      "headline": "You don't need cheaper images. You need your brand, at catalogue scale."
+    },
+    {
+      "template": "statement",
+      "variant": "media",
+      "media": {
+        "type": "image",
+        "url": "https://cdn.significa.co/ai-studio/1782311776140-JjyFsN.png",
+        "fit": "cover"
+      }
+    },
+    {
+      "template": "statement",
+      "variant": "feature",
+      "label": "Range",
+      "headline": "Your brand, on anyone, anywhere.",
+      "body": "People or products, studio or lifestyle. Every image is generated from your catalogue and your brand system, so it looks like you across the whole range, not like a stock filter.",
+      "orientation": "side",
+      "media": {
+        "type": "image",
+        "url": "https://cdn.significa.co/ai-studio/1782145912324-fcMIhq.png",
+        "fit": "cover",
+        "anchor": "top"
+      }
+    },
+    {
+      "template": "statement",
+      "variant": "feature",
+      "label": "Resolution",
+      "headline": "Sharp enough to print, in 2K and 4K.",
+      "body": "Every generation runs up to 4K, down to the texture of a fabric or the facets of a stone. Ready for zoom, hero banners, and print, not just a thumbnail.",
+      "orientation": "side",
+      "media": {
+        "type": "image",
+        "url": "https://cdn.significa.co/ai-studio/1780408032031_processed-PK5Qcz.png",
+        "fit": "cover"
+      }
+    },
+    {
+      "template": "statement",
+      "variant": "feature",
+      "label": "Control",
+      "headline": "Not a slot machine. You direct every shot.",
+      "body": "Set the scene, the look, and the lighting, then generate. If something is not right, point at it and say what to change: swap the shoes, fix a detail, change the background. No re-shoot, no starting over. You direct every frame until it is exactly right.",
+      "orientation": "side",
+      "media": {
+        "type": "image",
+        "url": "https://cdn.significa.co/ai-studio/screenshot-2026-06-26-at-14.12.13-6L4Iyz.png",
+        "fit": "cover",
+        "anchor": "bottom"
+      }
+    },
+    {
+      "template": "statement",
+      "variant": "feature",
+      "label": "Integrations",
+      "headline": "Import from anything. Export to anything.",
+      "body": "Adapters connect it to whatever you run. Pull products and their full metadata in from Shopify, your CMS, or any connected tool, generate the images and copy, then push the finished assets straight back out to wherever they belong. One flow, in and out, across your whole stack.",
+      "orientation": "below",
+      "media": {
+        "type": "image",
+        "url": "https://cdn.significa.co/ai-studio/screenshot-2026-07-10-at-09.38.22-a7uX0F.png",
+        "fit": "cover"
+      }
+    },
+    {
+      "template": "statement",
+      "variant": "feature",
+      "label": "The finish",
+      "headline": "Finished on real film stocks, not an AI filter.",
+      "body": "Apply the look of real photography, Portra, Ektar, Superia, and more, so the grain, colour, and depth read like a shoot rather than a render. It is the difference between an image you could run as a campaign and one that gives itself away as AI.",
+      "orientation": "side",
+      "media": {
+        "type": "image",
+        "url": "https://cdn.significa.co/ai-studio/screenshot-2026-06-26-at-14.37.53-MaGE4a.png",
+        "fit": "cover",
+        "anchor": "bottom"
+      }
+    },
+    {
+      "template": "statement",
+      "variant": "feature",
+      "label": "Video, coming soon",
+      "headline": "Soon, your products move.",
+      "body": "Bring any generation to life as a short, live-photo style clip, up to five seconds, made by the same engine, on the same brand. Coming soon.",
+      "orientation": "side",
+      "media": {
+        "type": "image",
+        "url": "https://cdn.significa.co/ai-studio/1782214383497_processed-Jb7ft1.png",
+        "fit": "cover"
+      }
+    },
+    {
+      "template": "statement",
+      "variant": "feature",
+      "label": "Your library",
+      "headline": "Every shot, saved and organised.",
+      "body": "Each image you generate lands in your library, organised by product and look, ready to reuse, re-export, or publish. Your whole visual catalogue in one place, growing every time you create.",
+      "orientation": "below",
+      "media": {
+        "type": "image",
+        "url": "https://cdn.significa.co/ai-studio/ai-studio-1-uoVYUm.png",
+        "fit": "cover"
+      }
+    },
+    {
+      "template": "statement",
+      "variant": "feature",
+      "label": "Let's be honest",
+      "headline": "You have seen image tools at a few euros a month. This is not one of them.",
+      "body": "Those make pixels. This replaces a photo shoot: brand-locked, in your stack, copy included, at a resolution you can print. Compare it to what a studio day costs you, not to a filter app, and the maths changes completely.",
+      "orientation": "side",
+      "media": {
+        "type": "image",
+        "url": "https://cdn.significa.co/ai-studio/1782215462096_processed-cWst1y.png",
+        "fit": "cover",
+        "anchor": "top"
+      }
+    },
+    {
+      "template": "statement",
+      "variant": "feature",
+      "label": "Built for Europe",
+      "headline": "Generate AI imagery without the legal risk.",
+      "body": "Unphoto is built to meet the EU AI Act. Every generated image is transparently marked as AI-created the way the Act requires, and every action is captured in a full audit trail, so you always know what was made, by whom, and when. Compliance is built in, not bolted on.",
+      "orientation": "below",
+      "media": {
+        "type": "image",
+        "url": "https://cdn.significa.co/ai-studio/ai-studio-2-e7SgMp.png",
+        "fit": "cover"
+      }
+    },
+    {
+      "template": "table",
+      "label": "Pricing",
+      "headline": "Pick the volume, not the features.",
+      "body": "Every plan includes the entire product, today and everything we add later, with copy and hands-on onboarding always included. The only thing that ever changes is how many images you make. Pick monthly or yearly billing, and the bigger your plan, the less every image costs. Start free with 15 a month, then go beyond your plan any time at the usage rate. One credit is one image, and 4K counts as two. Need more than 2,500 a month? Enterprise is built for you.",
+      "headerColumn": true,
+      "columns": [
+        { "label": "—" },
+        { "label": "Starter" },
+        { "label": "Growth", "accent": "emerald" },
+        { "label": "Scale" }
+      ],
+      "rows": [
+        { "cells": [ { "label": "Monthly" }, { "label": "59€", "description": "/mo, billed monthly" }, { "label": "239€", "description": "/mo, billed monthly" }, { "label": "719€", "description": "/mo, billed monthly" } ] },
+        { "cells": [ { "label": "Yearly" }, { "label": "49€", "description": "/mo, billed yearly" }, { "label": "199€", "description": "/mo, billed yearly" }, { "label": "599€", "description": "/mo, billed yearly" } ] },
+        { "cells": [ { "label": "Images / month" }, { "label": "150" }, { "label": "750" }, { "label": "2.500" } ] },
+        { "cells": [ { "label": "In 4K" }, { "label": "75" }, { "label": "375" }, { "label": "1.250" } ] },
+        { "cells": [ { "label": "Copy generation" }, { "label": "Included" }, { "label": "Included" }, { "label": "Included" } ] },
+        { "cells": [ { "label": "Onboarding & setup" }, { "label": "Included" }, { "label": "Included" }, { "label": "Included" } ] },
+        { "cells": [ { "label": "Extra usage (2K / 4K)" }, { "label": "0,40€ / 0,80€" }, { "label": "0,40€ / 0,80€" }, { "label": "0,40€ / 0,80€" } ] }
+      ]
+    },
+    {
+      "template": "statement",
+      "variant": "feature",
+      "label": "Enterprise",
+      "headline": "When you outgrow Scale, we tailor the whole thing.",
+      "body": "For brands generating more than 2,500 images a month. Committed volume at the best per-image rate, an uptime SLA, custom brand-model tuning, and a dedicated team that onboards you and stays close.",
+      "orientation": "below",
+      "media": {
+        "type": "image",
+        "url": "https://cdn.significa.co/ai-studio/rivelia_2_final-proof-of-concept-KCnSF4.png",
+        "fit": "cover"
+      }
+    },
+    {
+      "template": "end",
+      "headline": "Start generating.",
+      "body": "Create your first 15 images free, no card. Talk to us about Enterprise at significa.co.",
+      "client": {
+        "name": "Unphoto",
+        "logo": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 117 12.97\"><path fill=\"currentColor\" d=\"M3.32.31v6.94q0 .69.12 1.25t.43.96.88.62 1.47.21q.68 0 1.42-.19a10 10 0 0 0 1.49-.5 11 11 0 0 0 1.39-.72q.67-.41 1.2-.85V.31h3.32v12.31h-3.31v-1.68l-1.34.72q-.71.36-1.5.66-.8.29-1.7.46-.9.19-1.89.19-1.25 0-2.23-.3t-1.66-.85q-.68-.56-1.05-1.33Q0 9.7 0 8.73V.31zm26.39 12.31v-6.9q0-.69-.12-1.24-.12-.56-.44-.96-.31-.4-.88-.62t-1.46-.22q-.68 0-1.44.19a10 10 0 0 0-1.48.48 11 11 0 0 0-1.4.71q-.66.4-1.18.84v7.72h-3.33V.31h3.33V2a25 25 0 0 1 1.33-.71q.71-.36 1.5-.65t1.7-.46T27.73 0q1.25 0 2.22.3.99.3 1.66.86.68.55 1.04 1.33.37.78.37 1.75v8.38zm20.03-8.11q0 .92-.27 1.71-.27.77-.87 1.33-.59.56-1.54.87t-2.31.31h-5.52v3.89h-3.32V.31h8.84q1.36 0 2.31.32.95.3 1.54.87.6.56.87 1.32t.27 1.69m-3.36.06q0-.43-.12-.74t-.4-.51-.72-.28q-.45-.1-1.11-.1h-4.8v3.17h4.8q.65 0 1.11-.07.45-.08.72-.26.28-.19.4-.49.13-.3.12-.72m16.98 8.05V7.49H54.9v5.13h-3.32V.31h3.32v4.48h8.46V.31h3.32v12.31zm22.18-6.14q0 1.58-.58 2.8t-1.67 2.02-2.63 1.24q-1.54.41-3.47.41t-3.48-.41-2.64-1.24-1.69-2.02q-.59-1.22-.59-2.8t.59-2.8 1.69-2.03T73.71.42Q75.27 0 77.19 0t3.47.42 2.63 1.23 1.67 2.03q.58 1.21.58 2.8m-3.36 0q0-.69-.22-1.37-.21-.69-.78-1.24-.56-.55-1.52-.89t-2.47-.34q-1 0-1.76.16-.76.15-1.32.43t-.93.66-.6.8a3 3 0 0 0-.32.88 5 5 0 0 0-.09.91q0 .46.09.92a4 4 0 0 0 .32.89q.22.42.6.79t.93.65q.56.27 1.32.43t1.76.15q1.5 0 2.47-.34t1.52-.89q.56-.55.78-1.22.22-.69.22-1.38m12.37-3.49v9.63h-3.32V2.99h-5.22V.31h13.77v2.68zm22.44 3.49q0 1.58-.58 2.8a5.5 5.5 0 0 1-1.66 2.03q-1.08.82-2.64 1.23-1.54.41-3.46.41c-1.93 0-2.45-.14-3.49-.41q-1.55-.42-2.64-1.23a5.5 5.5 0 0 1-1.69-2.03q-.59-1.22-.59-2.8t.59-2.8a5.5 5.5 0 0 1 1.69-2.03q1.09-.82 2.64-1.23 1.56-.42 3.49-.42c1.93 0 2.44.14 3.46.42q1.55.41 2.64 1.23a5.5 5.5 0 0 1 1.66 2.03q.58 1.21.58 2.8m-3.36 0q0-.69-.22-1.37a3 3 0 0 0-.78-1.24q-.56-.55-1.52-.89-.97-.34-2.46-.34-1 0-1.77.16a5 5 0 0 0-1.32.43 4 4 0 0 0-.93.66q-.38.37-.6.8a3 3 0 0 0-.32.88q-.09.46-.09.91 0 .46.09.92.1.47.32.9.22.42.6.78a4 4 0 0 0 .93.65 6 6 0 0 0 1.32.43 9 9 0 0 0 1.77.15q1.5 0 2.46-.34.97-.34 1.52-.89a3 3 0 0 0 .78-1.22q.22-.69.22-1.38\"/></svg>",
+        "color": "#ffffff"
+      },
+      "sharedDate": "June 2026",
+      "partner": "Significa"
+    }
+  ]
+}

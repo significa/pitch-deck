@@ -9,6 +9,13 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@700&display=swap" />
         <link rel="stylesheet" href="../../deck.css" />
         <link rel="stylesheet" href="../../styles.css" />
+        <style>
+[data-slide-type="cover"] .cover__brand-logo--svg:not(.cover__brand-logo--significa),
+[data-slide-type="end"] .end__brand-logo--svg:not(.end__brand-logo--significa) {
+    color: #1a1714;
+}
+
+        </style>
     </head>
     <body>
         <nav class="deck-nav" aria-label="Slide navigation">
@@ -80,10 +87,10 @@
     <div class="half half--right">
         <div class="half__content">
             <div class="logo__wrapper">
-                <div class="logo__inner" style="background: var(--color-rust);">
-                      
-                    <div class="cover__brand-fallback">Unphoto</div>
-                    
+                <div class="logo__inner" style="background: #ffffff;">
+                     
+                    <div class="cover__brand-logo--svg"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 117 12.97"><path fill="currentColor" d="M3.32.31v6.94q0 .69.12 1.25t.43.96.88.62 1.47.21q.68 0 1.42-.19a10 10 0 0 0 1.49-.5 11 11 0 0 0 1.39-.72q.67-.41 1.2-.85V.31h3.32v12.31h-3.31v-1.68l-1.34.72q-.71.36-1.5.66-.8.29-1.7.46-.9.19-1.89.19-1.25 0-2.23-.3t-1.66-.85q-.68-.56-1.05-1.33Q0 9.7 0 8.73V.31zm26.39 12.31v-6.9q0-.69-.12-1.24-.12-.56-.44-.96-.31-.4-.88-.62t-1.46-.22q-.68 0-1.44.19a10 10 0 0 0-1.48.48 11 11 0 0 0-1.4.71q-.66.4-1.18.84v7.72h-3.33V.31h3.33V2a25 25 0 0 1 1.33-.71q.71-.36 1.5-.65t1.7-.46T27.73 0q1.25 0 2.22.3.99.3 1.66.86.68.55 1.04 1.33.37.78.37 1.75v8.38zm20.03-8.11q0 .92-.27 1.71-.27.77-.87 1.33-.59.56-1.54.87t-2.31.31h-5.52v3.89h-3.32V.31h8.84q1.36 0 2.31.32.95.3 1.54.87.6.56.87 1.32t.27 1.69m-3.36.06q0-.43-.12-.74t-.4-.51-.72-.28q-.45-.1-1.11-.1h-4.8v3.17h4.8q.65 0 1.11-.07.45-.08.72-.26.28-.19.4-.49.13-.3.12-.72m16.98 8.05V7.49H54.9v5.13h-3.32V.31h3.32v4.48h8.46V.31h3.32v12.31zm22.18-6.14q0 1.58-.58 2.8t-1.67 2.02-2.63 1.24q-1.54.41-3.47.41t-3.48-.41-2.64-1.24-1.69-2.02q-.59-1.22-.59-2.8t.59-2.8 1.69-2.03T73.71.42Q75.27 0 77.19 0t3.47.42 2.63 1.23 1.67 2.03q.58 1.21.58 2.8m-3.36 0q0-.69-.22-1.37-.21-.69-.78-1.24-.56-.55-1.52-.89t-2.47-.34q-1 0-1.76.16-.76.15-1.32.43t-.93.66-.6.8a3 3 0 0 0-.32.88 5 5 0 0 0-.09.91q0 .46.09.92a4 4 0 0 0 .32.89q.22.42.6.79t.93.65q.56.27 1.32.43t1.76.15q1.5 0 2.47-.34t1.52-.89q.56-.55.78-1.22.22-.69.22-1.38m12.37-3.49v9.63h-3.32V2.99h-5.22V.31h13.77v2.68zm22.44 3.49q0 1.58-.58 2.8a5.5 5.5 0 0 1-1.66 2.03q-1.08.82-2.64 1.23-1.54.41-3.46.41c-1.93 0-2.45-.14-3.49-.41q-1.55-.42-2.64-1.23a5.5 5.5 0 0 1-1.69-2.03q-.59-1.22-.59-2.8t.59-2.8a5.5 5.5 0 0 1 1.69-2.03q1.09-.82 2.64-1.23 1.56-.42 3.49-.42c1.93 0 2.44.14 3.46.42q1.55.41 2.64 1.23a5.5 5.5 0 0 1 1.66 2.03q.58 1.21.58 2.8m-3.36 0q0-.69-.22-1.37a3 3 0 0 0-.78-1.24q-.56-.55-1.52-.89-.97-.34-2.46-.34-1 0-1.77.16a5 5 0 0 0-1.32.43 4 4 0 0 0-.93.66q-.38.37-.6.8a3 3 0 0 0-.32.88q-.09.46-.09.91 0 .46.09.92.1.47.32.9.22.42.6.78a4 4 0 0 0 .93.65 6 6 0 0 0 1.32.43 9 9 0 0 0 1.77.15q1.5 0 2.46-.34.97-.34 1.52-.89a3 3 0 0 0 .78-1.22q.22-.69.22-1.38"/></svg></div>
+                     
                 </div>
             </div>
         </div>
@@ -246,7 +253,7 @@
             <div class="slide-header">
                 <p class="content__label">Control</p>
 <h1>Not a slot machine. You direct every shot.</h1>
-<p class="slide-header__body">Pull a product straight from Shopify or your CMS, then set the scene, the look, and the lighting. If something is not right, point at it and say what to change: swap the shoes, fix a detail, change the background. No re-shoot, no starting over. Approve it, and it publishes back to your store.</p>
+<p class="slide-header__body">Set the scene, the look, and the lighting, then generate. If something is not right, point at it and say what to change: swap the shoes, fix a detail, change the background. No re-shoot, no starting over. You direct every frame until it is exactly right.</p>
 
             </div>
         </div>
@@ -254,6 +261,33 @@
             
             
             <img class="statement__media-asset" src="https://cdn.significa.co/ai-studio/screenshot-2026-06-26-at-14.12.13-6L4Iyz.png" alt="" style="object-position: bottom" />
+            
+            
+            
+            
+            
+        </div>
+    </div>
+    
+</section>
+<section class="slide" data-slide-type="statement" data-variant="feature">
+    
+    
+    
+    
+    <div class="statement__feature statement__feature--below">
+        <div class="statement__feature-text ">
+            <div class="slide-header">
+                <p class="content__label">Integrations</p>
+<h1>Import from anything. Export to anything.</h1>
+<p class="slide-header__body">Adapters connect it to whatever you run. Pull products and their full metadata in from Shopify, your CMS, or any connected tool, generate the images and copy, then push the finished assets straight back out to wherever they belong. One flow, in and out, across your whole stack.</p>
+
+            </div>
+        </div>
+        <div class="statement__feature-media statement__media--cover">
+            
+            
+            <img class="statement__media-asset" src="https://cdn.significa.co/ai-studio/screenshot-2026-07-10-at-09.38.22-a7uX0F.png" alt="" style="" />
             
             
             
@@ -280,7 +314,34 @@
         <div class="statement__feature-media statement__media--cover">
             
             
-            <img class="statement__media-asset" src="https://cdn.significa.co/ai-studio/screenshot-2026-06-26-at-15.56.29-X6XxkV.png" alt="" style="object-position: bottom" />
+            <img class="statement__media-asset" src="https://cdn.significa.co/ai-studio/screenshot-2026-06-26-at-14.37.53-MaGE4a.png" alt="" style="object-position: bottom" />
+            
+            
+            
+            
+            
+        </div>
+    </div>
+    
+</section>
+<section class="slide" data-slide-type="statement" data-variant="feature">
+    
+    
+    
+    
+    <div class="statement__feature statement__feature--side">
+        <div class="statement__feature-text slide-left">
+            <div class="slide-header">
+                <p class="content__label">Video, coming soon</p>
+<h1>Soon, your products move.</h1>
+<p class="slide-header__body">Bring any generation to life as a short, live-photo style clip, up to five seconds, made by the same engine, on the same brand. Coming soon.</p>
+
+            </div>
+        </div>
+        <div class="statement__feature-media statement__media--cover">
+            
+            
+            <img class="statement__media-asset" src="https://cdn.significa.co/ai-studio/1782214383497_processed-Jb7ft1.png" alt="" style="" />
             
             
             
@@ -354,7 +415,7 @@
             <div class="slide-header">
                 <p class="content__label">Built for Europe</p>
 <h1>Generate AI imagery without the legal risk.</h1>
-<p class="slide-header__body">AI Studio is built to meet the EU AI Act. Every generated image is transparently marked as AI-created the way the Act requires, and every action is captured in a full audit trail, so you always know what was made, by whom, and when. Compliance is built in, not bolted on.</p>
+<p class="slide-header__body">Unphoto is built to meet the EU AI Act. Every generated image is transparently marked as AI-created the way the Act requires, and every action is captured in a full audit trail, so you always know what was made, by whom, and when. Compliance is built in, not bolted on.</p>
 
             </div>
         </div>
@@ -375,7 +436,7 @@
     <div class="table__header">
         <div class="slide-header"><p class="content__label">Pricing</p>
 <h1>Pick the volume, not the features.</h1>
-<p class="slide-header__body">Every plan includes the entire product, today and everything we add later, with copy and hands-on onboarding always included. The only thing that ever changes is how many images you make. Pick monthly or yearly billing, and the bigger your plan, the less every image costs. Go beyond your plan any time at the usage rate. One credit is one image, and 4K counts as two. Need more than 2,500 a month? Enterprise is built for you.</p>
+<p class="slide-header__body">Every plan includes the entire product, today and everything we add later, with copy and hands-on onboarding always included. The only thing that ever changes is how many images you make. Pick monthly or yearly billing, and the bigger your plan, the less every image costs. Start free with 15 a month, then go beyond your plan any time at the usage rate. One credit is one image, and 4K counts as two. Need more than 2,500 a month? Enterprise is built for you.</p>
 </div>
     </div>
     <div class="table__grid">
@@ -386,37 +447,30 @@
                     
                     <th
                         class="table__th"
-                        style="width: 20.0000%;"
+                        style="width: 25.0000%;"
                     >
                         <span class="content__label">—</span>
                     </th>
                     
                     <th
                         class="table__th"
-                        style="width: 20.0000%;"
+                        style="width: 25.0000%;"
                     >
                         <span class="content__label">Starter</span>
                     </th>
                     
                     <th
                         class="table__th table__th--accent"
-                        style="width: 20.0000%; --highlight-color: var(--color-emerald);"
+                        style="width: 25.0000%; --highlight-color: var(--color-emerald);"
                     >
                         <span class="content__label">Growth</span>
                     </th>
                     
                     <th
                         class="table__th"
-                        style="width: 20.0000%;"
+                        style="width: 25.0000%;"
                     >
                         <span class="content__label">Scale</span>
-                    </th>
-                    
-                    <th
-                        class="table__th"
-                        style="width: 20.0000%;"
-                    >
-                        <span class="content__label">Enterprise</span>
                     </th>
                     
                 </tr>
@@ -464,14 +518,6 @@
                         
                     </td>
                     
-                    <td
-                        class="table__td"
-                        style=""
-                    >
-                        <p class="table__cell-label">Custom</p>
-                        
-                    </td>
-                    
                 </tr>
                 
                 <tr class="table__row">
@@ -514,14 +560,6 @@
                         
                     </td>
                     
-                    <td
-                        class="table__td"
-                        style=""
-                    >
-                        <p class="table__cell-label">Custom</p>
-                        
-                    </td>
-                    
                 </tr>
                 
                 <tr class="table__row">
@@ -538,7 +576,7 @@
                         class="table__td"
                         style=""
                     >
-                        <p class="table__cell-label">150 (2K) / 75 (4K)</p>
+                        <p class="table__cell-label">150</p>
                         
                     </td>
                     
@@ -546,7 +584,7 @@
                         class="table__td table__td--highlight"
                         style="--highlight-color: var(--color-emerald);"
                     >
-                        <p class="table__cell-label">750 (2K) / 375 (4K)</p>
+                        <p class="table__cell-label">750</p>
                         
                     </td>
                     
@@ -554,7 +592,19 @@
                         class="table__td"
                         style=""
                     >
-                        <p class="table__cell-label">2.500 (2K) / 1.250 (4K)</p>
+                        <p class="table__cell-label">2.500</p>
+                        
+                    </td>
+                    
+                </tr>
+                
+                <tr class="table__row">
+                    
+                    <td
+                        class="table__td table__td--header"
+                        style=""
+                    >
+                        <p class="table__cell-label">In 4K</p>
                         
                     </td>
                     
@@ -562,7 +612,23 @@
                         class="table__td"
                         style=""
                     >
-                        <p class="table__cell-label">Custom</p>
+                        <p class="table__cell-label">75</p>
+                        
+                    </td>
+                    
+                    <td
+                        class="table__td table__td--highlight"
+                        style="--highlight-color: var(--color-emerald);"
+                    >
+                        <p class="table__cell-label">375</p>
+                        
+                    </td>
+                    
+                    <td
+                        class="table__td"
+                        style=""
+                    >
+                        <p class="table__cell-label">1.250</p>
                         
                     </td>
                     
@@ -589,14 +655,6 @@
                     <td
                         class="table__td table__td--highlight"
                         style="--highlight-color: var(--color-emerald);"
-                    >
-                        <p class="table__cell-label">Included</p>
-                        
-                    </td>
-                    
-                    <td
-                        class="table__td"
-                        style=""
                     >
                         <p class="table__cell-label">Included</p>
                         
@@ -646,14 +704,6 @@
                         
                     </td>
                     
-                    <td
-                        class="table__td"
-                        style=""
-                    >
-                        <p class="table__cell-label">Included</p>
-                        
-                    </td>
-                    
                 </tr>
                 
                 <tr class="table__row">
@@ -687,14 +737,6 @@
                         style=""
                     >
                         <p class="table__cell-label">0,40€ / 0,80€</p>
-                        
-                    </td>
-                    
-                    <td
-                        class="table__td"
-                        style=""
-                    >
-                        <p class="table__cell-label">Custom</p>
                         
                     </td>
                     
@@ -737,7 +779,7 @@
             <div class="end__header">
                 <h1 class="end__headline">Start generating.</h1>
                 
-                <p class="end__body">Talk to us about Enterprise at significa.co.</p>
+                <p class="end__body">Create your first 15 images free, no card. Talk to us about Enterprise at significa.co.</p>
                 
             </div>
             <div class="logo__wrapper">
@@ -772,11 +814,11 @@
     <div class="half half--right">
         <div class="half__content">
             <div class="logo__wrapper">
-                <div class="logo__inner" style="background: var(--color-rust);">
+                <div class="logo__inner" style="background: #ffffff;">
                     
                     
+                    <div class="end__brand-logo--svg"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 117 12.97"><path fill="currentColor" d="M3.32.31v6.94q0 .69.12 1.25t.43.96.88.62 1.47.21q.68 0 1.42-.19a10 10 0 0 0 1.49-.5 11 11 0 0 0 1.39-.72q.67-.41 1.2-.85V.31h3.32v12.31h-3.31v-1.68l-1.34.72q-.71.36-1.5.66-.8.29-1.7.46-.9.19-1.89.19-1.25 0-2.23-.3t-1.66-.85q-.68-.56-1.05-1.33Q0 9.7 0 8.73V.31zm26.39 12.31v-6.9q0-.69-.12-1.24-.12-.56-.44-.96-.31-.4-.88-.62t-1.46-.22q-.68 0-1.44.19a10 10 0 0 0-1.48.48 11 11 0 0 0-1.4.71q-.66.4-1.18.84v7.72h-3.33V.31h3.33V2a25 25 0 0 1 1.33-.71q.71-.36 1.5-.65t1.7-.46T27.73 0q1.25 0 2.22.3.99.3 1.66.86.68.55 1.04 1.33.37.78.37 1.75v8.38zm20.03-8.11q0 .92-.27 1.71-.27.77-.87 1.33-.59.56-1.54.87t-2.31.31h-5.52v3.89h-3.32V.31h8.84q1.36 0 2.31.32.95.3 1.54.87.6.56.87 1.32t.27 1.69m-3.36.06q0-.43-.12-.74t-.4-.51-.72-.28q-.45-.1-1.11-.1h-4.8v3.17h4.8q.65 0 1.11-.07.45-.08.72-.26.28-.19.4-.49.13-.3.12-.72m16.98 8.05V7.49H54.9v5.13h-3.32V.31h3.32v4.48h8.46V.31h3.32v12.31zm22.18-6.14q0 1.58-.58 2.8t-1.67 2.02-2.63 1.24q-1.54.41-3.47.41t-3.48-.41-2.64-1.24-1.69-2.02q-.59-1.22-.59-2.8t.59-2.8 1.69-2.03T73.71.42Q75.27 0 77.19 0t3.47.42 2.63 1.23 1.67 2.03q.58 1.21.58 2.8m-3.36 0q0-.69-.22-1.37-.21-.69-.78-1.24-.56-.55-1.52-.89t-2.47-.34q-1 0-1.76.16-.76.15-1.32.43t-.93.66-.6.8a3 3 0 0 0-.32.88 5 5 0 0 0-.09.91q0 .46.09.92a4 4 0 0 0 .32.89q.22.42.6.79t.93.65q.56.27 1.32.43t1.76.15q1.5 0 2.47-.34t1.52-.89q.56-.55.78-1.22.22-.69.22-1.38m12.37-3.49v9.63h-3.32V2.99h-5.22V.31h13.77v2.68zm22.44 3.49q0 1.58-.58 2.8a5.5 5.5 0 0 1-1.66 2.03q-1.08.82-2.64 1.23-1.54.41-3.46.41c-1.93 0-2.45-.14-3.49-.41q-1.55-.42-2.64-1.23a5.5 5.5 0 0 1-1.69-2.03q-.59-1.22-.59-2.8t.59-2.8a5.5 5.5 0 0 1 1.69-2.03q1.09-.82 2.64-1.23 1.56-.42 3.49-.42c1.93 0 2.44.14 3.46.42q1.55.41 2.64 1.23a5.5 5.5 0 0 1 1.66 2.03q.58 1.21.58 2.8m-3.36 0q0-.69-.22-1.37a3 3 0 0 0-.78-1.24q-.56-.55-1.52-.89-.97-.34-2.46-.34-1 0-1.77.16a5 5 0 0 0-1.32.43 4 4 0 0 0-.93.66q-.38.37-.6.8a3 3 0 0 0-.32.88q-.09.46-.09.91 0 .46.09.92.1.47.32.9.22.42.6.78a4 4 0 0 0 .93.65 6 6 0 0 0 1.32.43 9 9 0 0 0 1.77.15q1.5 0 2.46-.34.97-.34 1.52-.89a3 3 0 0 0 .78-1.22q.22-.69.22-1.38"/></svg></div>
                     
-                    <div class="end__brand-fallback">Unphoto</div>
                     
                 </div>
             </div>
