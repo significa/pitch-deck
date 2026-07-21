@@ -99,6 +99,19 @@
     {
       "template": "statement",
       "variant": "feature",
+      "label": "Integrations",
+      "headline": "Import from anything. Export to anything.",
+      "body": "Adapters connect it to whatever you run. Pull products and their full metadata in from Shopify, your CMS, or any connected tool, generate the images and copy, then push the finished assets straight back out to wherever they belong. One flow, in and out, across your whole stack.",
+      "orientation": "side",
+      "media": {
+        "type": "image",
+        "url": "https://cdn.significa.co/ai-studio/mockup-horizontal-shopify-wbItAb.png",
+        "fit": "cover"
+      }
+    },
+    {
+      "template": "statement",
+      "variant": "feature",
       "label": "The finish",
       "headline": "Finished on real film stocks, not an AI filter.",
       "body": "Apply the look of real photography, Portra, Ektar, Superia, and more, so the grain, colour, and depth read like a shoot rather than a render. It is the difference between an image you could run as a campaign and one that gives itself away as AI.",
@@ -113,13 +126,13 @@
     {
       "template": "statement",
       "variant": "feature",
-      "label": "Integrations",
-      "headline": "Import from anything. Export to anything.",
-      "body": "Adapters connect it to whatever you run. Pull products and their full metadata in from Shopify, your CMS, or any connected tool, generate the images and copy, then push the finished assets straight back out to wherever they belong. One flow, in and out, across your whole stack.",
+      "label": "Video, coming soon",
+      "headline": "Soon, your products move.",
+      "body": "Bring any generation to life as a short, live-photo style clip, up to five seconds, made by the same engine, on the same brand. Coming soon.",
       "orientation": "side",
       "media": {
         "type": "image",
-        "url": "https://cdn.significa.co/ai-studio/mockup-horizontal-shopify-wbItAb.png",
+        "url": "https://cdn.significa.co/ai-studio/1782214383497_processed-Jb7ft1.png",
         "fit": "cover"
       }
     },
@@ -167,77 +180,164 @@
       "template": "table",
       "label": "Pricing",
       "headline": "Pick the volume, not the features.",
-      "body": "Every plan includes the entire product, today and everything we add later, with copy and hands-on onboarding always included. The only thing that ever changes is how many images you make. Pick monthly or yearly billing, and the bigger your plan, the less every image costs. Go beyond your plan any time at the usage rate. One credit is one image, and 4K counts as two. Need more than 2,500 a month? Enterprise is built for you.",
+      "body": "Every plan includes the entire product, today and everything we add later, with copy and hands-on onboarding always included. The only thing that changes is your volume. Pick monthly or yearly billing, and the bigger your plan, the less every credit costs, with anything beyond it billed at the usage rate. Everything runs on credits: a 2K image is 1, a 4K image is 2, video, coming soon, is 2 a second in 1080p and 4 in 4K, and copy is always free. Need more than 2,500 a month? Enterprise is built for you.",
       "headerColumn": true,
       "columns": [
-        { "label": "—" },
-        { "label": "Starter" },
-        { "label": "Growth", "accent": "emerald" },
-        { "label": "Scale" },
-        { "label": "Enterprise" }
+        {
+          "label": "—"
+        },
+        {
+          "label": "Starter"
+        },
+        {
+          "label": "Growth",
+          "accent": "emerald"
+        },
+        {
+          "label": "Scale"
+        },
+        {
+          "label": "Enterprise"
+        }
       ],
       "rows": [
         {
           "cells": [
-            { "label": "Monthly" },
-            { "label": "59€", "description": "/mo, billed monthly" },
-            { "label": "239€", "description": "/mo, billed monthly" },
-            { "label": "719€", "description": "/mo, billed monthly" },
-            { "label": "Custom" }
+            {
+              "label": "Monthly"
+            },
+            {
+              "label": "59€",
+              "description": "/mo, billed monthly"
+            },
+            {
+              "label": "239€",
+              "description": "/mo, billed monthly"
+            },
+            {
+              "label": "719€",
+              "description": "/mo, billed monthly"
+            },
+            {
+              "label": "Custom"
+            }
           ]
         },
         {
           "cells": [
-            { "label": "Yearly" },
-            { "label": "49€", "description": "/mo, billed yearly" },
-            { "label": "199€", "description": "/mo, billed yearly" },
-            { "label": "599€", "description": "/mo, billed yearly" },
-            { "label": "Custom" }
+            {
+              "label": "Yearly"
+            },
+            {
+              "label": "49€",
+              "description": "/mo, billed yearly"
+            },
+            {
+              "label": "199€",
+              "description": "/mo, billed yearly"
+            },
+            {
+              "label": "599€",
+              "description": "/mo, billed yearly"
+            },
+            {
+              "label": "Custom"
+            }
           ]
         },
         {
           "cells": [
-            { "label": "Images / month" },
-            { "label": "150 (2K) / 75 (4K)" },
-            { "label": "750 (2K) / 375 (4K)" },
-            { "label": "2.500 (2K) / 1.250 (4K)" },
-            { "label": "Custom" }
+            {
+              "label": "Credits / month"
+            },
+            {
+              "label": "150"
+            },
+            {
+              "label": "750"
+            },
+            {
+              "label": "2.500"
+            },
+            {
+              "label": "Custom"
+            }
           ]
         },
         {
           "cells": [
-            { "label": "Copy generation" },
-            { "label": "Included" },
-            { "label": "Included" },
-            { "label": "Included" },
-            { "label": "Included" }
+            {
+              "label": "Copy generation"
+            },
+            {
+              "label": "Included"
+            },
+            {
+              "label": "Included"
+            },
+            {
+              "label": "Included"
+            },
+            {
+              "label": "Included"
+            }
           ]
         },
         {
           "cells": [
-            { "label": "Onboarding & setup" },
-            { "label": "Included" },
-            { "label": "Included" },
-            { "label": "Included" },
-            { "label": "Included" }
+            {
+              "label": "Onboarding & setup"
+            },
+            {
+              "label": "Included"
+            },
+            {
+              "label": "Included"
+            },
+            {
+              "label": "Included"
+            },
+            {
+              "label": "Included"
+            }
           ]
         },
         {
           "cells": [
-            { "label": "Extra usage (2K / 4K)" },
-            { "label": "0,40€ / 0,80€" },
-            { "label": "0,40€ / 0,80€" },
-            { "label": "0,40€ / 0,80€" },
-            { "label": "Custom" }
+            {
+              "label": "Extra usage"
+            },
+            {
+              "label": "0,40€ / credit"
+            },
+            {
+              "label": "0,40€ / credit"
+            },
+            {
+              "label": "0,40€ / credit"
+            },
+            {
+              "label": "Custom"
+            }
           ]
         },
         {
           "cells": [
-            { "label": "Video" },
-            { "label": "Coming soon" },
-            { "label": "Coming soon" },
-            { "label": "Coming soon" },
-            { "label": "Coming soon" }
+            {
+              "label": "Video"
+            },
+            {
+              "label": "Coming soon"
+            },
+            {
+              "label": "Coming soon"
+            },
+            {
+              "label": "Coming soon"
+            },
+            {
+              "label": "Coming soon"
+            }
           ]
         }
       ]
